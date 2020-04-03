@@ -684,10 +684,9 @@ public class DataBaseBOJ {
 			File dbFile = new File(Util.DirApp(), "DataBase.db");
 			db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READWRITE);
 
-			String query = "select distinct r.cod_cliente  as codigo, c.nit, c.representante_legal as nombre, c.razon_social as razonSocial,"
+			String query = " select distinct r.cod_cliente  as codigo, c.nit, c.representante_legal as nombre, c.razon_social as razonSocial,"
 					+ "direccion as direccion,cod_lista as cod_lista,c.ciudad,c.barrio,c.telefono, c.telefono_movil, "
-					+ "c.email, c.retefuente as retefuente, c.reteica as reteica, c.ListaPrecio, c.codigotipocliente as tipoCliente "
-					+ "from clientes as c "
+					+ "c.email, c.retefuente as retefuente, c.reteica as reteica, c.ListaPrecio from clientes as c "
 					+ " inner join rutero r on r.cod_cliente = c.cod_cliente " + " where r.cod_dia = " + codDia
 					+ " and codigo not in (select distinct cod_cliente from novedades) "
 					+ " order by r.orden_visita ASC ";
@@ -721,8 +720,7 @@ public class DataBaseBOJ {
 					cliente.retefuente = cursor.getInt(cursor.getColumnIndex("retefuente"));
 					cliente.reteIca = cursor.getInt(cursor.getColumnIndex("reteica"));
 					cliente.listaPrecio = cursor.getString(cursor.getColumnIndex("ListaPrecio"));
-					cliente.tipoCliente = cursor.getInt(cursor.getColumnIndex("tipoCliente"));
-					
+
 					itemListView.titulo = "Orden: " + contador + "  -- " + cliente.codigo + " " + cliente.nombre + "\n"
 							+ cliente.razonSocial;
 					itemListView.subTitulo = cliente.ciudad + " - " + cliente.direccion;
@@ -1138,7 +1136,7 @@ public class DataBaseBOJ {
 
 			/*
 			 * consulta para generar la base del numero doc formato
-			 * AC-codVendedor-ao-mes-dia-hora-minuto-segundo
+			 * AC-codVendedor-año-mes-dia-hora-minuto-segundo
 			 */
 			String query = "SELECT 'PD" + codigoVendedor + "' || STRFTIME('%Y%m%d%H%M%S','now','localtime') AS numero;";
 
@@ -4360,10 +4358,8 @@ public class DataBaseBOJ {
 					listaCartera.addElement(cartera);
 					
 //					itemListView.titulo = "Doc:" + cartera.documento;
-					itemListView.titulo = "Numero factura:" + cartera.numero_factura;
-					itemListView.subTitulo = "$"+ cartera.strSaldo +"/ dias venc: "+ cartera.dias+
-																		 "/ fecha realizacion: "+cartera.fecha.substring(0, 10) +
-																		 "/ fecha vence: "+cartera.FechaVecto.substring(0, 10);
+					itemListView.titulo = "Número factura:" + cartera.numero_factura;
+					itemListView.subTitulo = "$"+ cartera.strSaldo +"/ dias venc: "+ cartera.dias+ "/ fecha realización: "+cartera.fecha.substring(0, 10) +"/ fecha vence: "+cartera.FechaVecto.substring(0, 10);
 
 					listaItems.add(itemListView);
 			
@@ -6222,7 +6218,7 @@ public class DataBaseBOJ {
 		}
 	}
 	
-	public static boolean guardarImagenDeposito(String docDeposito, byte[] image) {
+	public static boolean guardarImagenDeposito(String docDeposito, byte[] image, double latitud, double longitud) {
 
 		SQLiteDatabase db = null;
 		SQLiteDatabase dbTemp = null;
@@ -6245,6 +6241,7 @@ public class DataBaseBOJ {
 				values.put("cod_novedad", docDeposito);
 				values.put("imagen", image);
 				values.put("extension", ".jpg");
+				
 
 				db.insertOrThrow("fotos", null, values);
 				dbTemp.insertOrThrow("fotos", null, values);
@@ -6258,6 +6255,8 @@ public class DataBaseBOJ {
 			
 			values = new ContentValues();
 			values.put("foto", 1);
+			values.put("latitud",latitud);
+			values.put("longitud",longitud);
 			db.update("novedades", values, "cod_novedad = '" + docDeposito + "'", null);
 			dbTemp.update("novedades", values, "cod_novedad = '" + docDeposito + "'", null);
 

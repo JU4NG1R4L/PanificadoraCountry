@@ -10,6 +10,7 @@ import java.util.Locale;
 import java.util.Vector;
 
 import android.R;
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -1346,7 +1347,7 @@ public class DataBaseBO {
 	}
 
 	public static boolean guardarNovedad(Encabezado encabezado, String numeroDoc, Cliente cliente, Usuario usuario,
-			String precioTotal, String observaciones, String imei, String version, int motivo, String latitud, String longitud) {
+			String precioTotal, String observaciones, String imei, String version, int motivo) {
 		SQLiteDatabase db = null;
 		SQLiteDatabase dbTemp = null;
 
@@ -1369,8 +1370,8 @@ public class DataBaseBO {
 			values.put("version_movil", version);
 			values.put("imei", imei);
 			values.put("cod_canal_venta", usuario.canalVenta);
-			values.put("latitud" , latitud);
-			values.put("longitud", longitud);
+			values.put("latitud", encabezado.lat);
+			values.put("longitud", encabezado.lon);
 
 			db.insertOrThrow("novedades", null, values);
 			dbTemp.insertOrThrow("novedades", null, values);
@@ -1584,7 +1585,7 @@ public class DataBaseBO {
 		}
 	}
 
-	public static boolean GuardarNoCompraSinFoto(Encabezado encabezado, Usuario usuario, String version, String imei, String latitud, String longitud) {
+	public static boolean GuardarNoCompraSinFoto(Encabezado encabezado, Usuario usuario, String version, String imei) {
 
 		SQLiteDatabase db = null;
 		SQLiteDatabase dbTemp = null;
@@ -1609,8 +1610,8 @@ public class DataBaseBO {
 			values.put("imei", imei);
 			values.put("cod_canal_venta", usuario.canalVenta);
 			values.put("foto", 0);
-			values.put("latitud", latitud);
-			values.put("longitud", longitud);
+			values.put("latitud", encabezado.latitud);
+			values.put("longitud", encabezado.longitud);
 
 			db.insertOrThrow("novedades", null, values);
 			dbTemp.insertOrThrow("novedades", null, values);
@@ -4244,6 +4245,7 @@ public class DataBaseBO {
 		return finalizado;
 	}
 
+	
 	/**
 	 * Metodo que permite borrar un producto que ha sido pedido. y se desea
 	 * quitar de la lista de detalle de pedido.
@@ -6903,6 +6905,322 @@ public class DataBaseBO {
 		}
 		return numeroFactura;
 	}
+
+	/**
+	 * Se obtiene el valor total del inventario que fue vendido
+	 *
+	 * @return
+	 */
+	public static int buscarValorInventario() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select  sum (ins.cantidad * pro.precio) as total from inventario as ins INNER JOIN productos as pro on ins.cod_producto = pro.cod_producto";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
+
+
+	/**
+	 * Se obtiene el valor total del inventario que fue sugerido para la cartera carro
+	 *
+	 * @return
+	 */
+	public static int buscarValorCargue() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select  sum (ins.cantidad * pro.precio) as total from ReadInventario_alistamiento as ins INNER JOIN productos_alistamiento as pro on ins.cod_producto = pro.cod_producto";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
+
+
+	/**
+	 * Se obtiene el valor total del inventario que fue sugerido para la cartera carro
+	 *
+	 * @return
+	 */
+	public static int buscarValorConsignacionCancelada() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select sum (saldo_recibido) as total from saldos_cancelados";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
+
+	/**
+	 * Se obtiene el valor total del inventario que fue sugerido para la cartera carro
+	 *
+	 * @return
+	 */
+	public static int buscarValorCambios() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select sum (valor) as total from encabezado_venta where cod_tipo_trans = '5'";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
+	/**
+	 * Se obtiene el valor total del inventario que fue sugerido para la cartera carro
+	 *
+	 * @return
+	 */
+	public static int buscarValorDescuentos() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select sum (descuento) as total from encabezado_venta ";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
+	/**
+	 * Se obtiene el valor total del inventario que fue sugerido para la cartera carro
+	 *
+	 * @return
+	 */
+	public static int buscarValorReteica() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select sum (valor_retencion_ica) as total from encabezado_venta";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
+
+
+	/**
+	 * Se obtiene el valor total del inventario que fue sugerido para la cartera carro
+	 *
+	 * @return
+	 */
+	public static int buscarValorRetefuente() {
+
+		int retefuente = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+
+			if (dbFile.exists()) {
+
+				db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
+
+				String query = "select sum (valor_retencion) as total from encabezado_venta";
+
+				Cursor cursor = db.rawQuery(query, null);
+
+				if (cursor.moveToFirst()) {
+
+					do {
+						retefuente = cursor.getInt(cursor.getColumnIndex("total"));
+					} while (cursor.moveToNext());
+				}
+
+				if (cursor != null)
+					cursor.close();
+			}
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+		return retefuente;
+	}
+
 
 	/**
 	 * Se obtiene el porcentaje de retencion en la fuente que sera aplicado a la
@@ -9737,7 +10055,7 @@ public class DataBaseBO {
 
 		boolean existe = false;
 		SQLiteDatabase db = null;
-		String latitud = "", longitud = "";
+
 		try {
 
 			File dbFile = new File(Util.DirApp(), "DataBase.db");
@@ -9745,37 +10063,15 @@ public class DataBaseBO {
 
 			String query = " SELECT Latitud, Longitud \n" + "FROM CertificarCoordanada \n " + "WHERE cod_cliente = '"
 					+ codCliente + "' ";
-
-			String query2 = " SELECT latitud, longitud FROM clientes WHERE cod_cliente='"+codCliente+"'";
-
 			Cursor cursor = db.rawQuery(query, null);
-			Cursor cursor1 = db.rawQuery(query2, null);
 
-			if(cursor1.moveToFirst()){
-				latitud = cursor1.getString(cursor1.getColumnIndex("latitud"));
-				longitud = cursor1.getString(cursor1.getColumnIndex("longitud"));
-				if(latitud==null || longitud == null || latitud.equals("0.0") || longitud.equals("0.0") || latitud.equals("0") || longitud.equals("0")){
-					if (cursor.moveToFirst()) {
+			if (cursor.moveToFirst()) {
 
-						latitud = cursor.getString(cursor.getColumnIndex("Latitud"));
-						longitud = cursor.getString(cursor.getColumnIndex("Longitud"));
-
-						if(latitud != null && longitud != null && !latitud.equals("0.0") && !longitud.equals("0.0") && !latitud.equals("0") && !longitud.equals("0"))
-							existe=true;
-
-					    }
-
-				}else{
-					existe = true;
-				}
+				existe = true;
 			}
-
 
 			if (cursor != null)
 				cursor.close();
-
-			if(cursor1 !=null)
-				cursor1.close();
 
 		} catch (Exception e) {
 
@@ -9790,6 +10086,121 @@ public class DataBaseBO {
 		return existe;
 	}
 
+	
+	public static double verLatitud(String codCliente) {
+
+		double existe = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+			db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READWRITE);
+
+			String query = " select Latitud from CertificarCoordanada where cod_cliente  = '"+ codCliente + "' LIMIT 1 ";
+			Cursor cursor = db.rawQuery(query, null);
+
+			if (cursor.moveToFirst()) {
+
+				existe = cursor.getDouble(cursor.getColumnIndex("Latitud"));
+			}
+
+			if (cursor != null)
+				cursor.close();
+
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+
+		return existe;
+	}
+	
+
+	public static double verLongitud(String codCliente) {
+
+		double existe = 0;
+		SQLiteDatabase db = null;
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+			db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READWRITE);
+
+			String query = "select Longitud from CertificarCoordanada where cod_cliente  = '"+ codCliente + "'  LIMIT 1 ";
+			Cursor cursor = db.rawQuery(query, null);
+
+			if (cursor.moveToFirst()) {
+
+				existe = cursor.getDouble(cursor.getColumnIndex("Longitud"));
+			}
+
+			if (cursor != null)
+				cursor.close();
+
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+
+		return existe;
+	}
+	
+	
+	
+	public static boolean existeCertificadoCoordenadas(String codCliente) {
+
+		boolean existe = false;
+		SQLiteDatabase db = null;
+		String lat = "";
+		String lon = "";
+
+		try {
+
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+			db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READWRITE);
+
+			String query = " SELECT latitud, longitud FROM clientes WHERE cod_cliente = '" + codCliente
+					+ "' ";
+			Cursor cursor = db.rawQuery(query, null);
+
+			if (cursor.moveToFirst()) {
+
+				lat = cursor.getString(cursor.getColumnIndex("latitud"));
+				lon = cursor.getString(cursor.getColumnIndex("longitud"));
+				
+				if (lat.equals(null)&&lon.equals(null)){
+					existe = false;
+				}else{
+					existe = true;
+				}
+			}
+
+			if (cursor != null)
+				cursor.close();
+
+		} catch (Exception e) {
+
+			mensaje = e.getMessage();
+
+		} finally {
+
+			if (db != null)
+				db.close();
+		}
+
+		return existe;
+	}
 
 	public static boolean GuardarCoordenadaCertificadas(Coordenada coordenada) {
 
@@ -9867,6 +10278,77 @@ public class DataBaseBO {
 				closeDataBase(db);
 		}
 		return distMax;
+	}
+
+
+	@SuppressLint("LongLogTag")
+	public static boolean guardarCarteraCarro(long inventario, long cargue, long subtotal, long consignacion, long cambios, long descuentos, long reteica, long retefuente, long total, Usuario usuario) {
+
+		//SQLiteDatabase db = null;
+		SQLiteDatabase tmp = null;
+		boolean insertado = false;
+
+		String fechaMovil = Util.FechaActual("yyyy-MM-dd HH:mm:ss");
+
+		// se define variables para contar inserciones
+		long rowDb = -2;
+		long rowTmp = -4;
+
+		try {
+/*
+			File dbFile = new File(Util.DirApp(), "DataBase.db");
+			db = SQLiteDatabase.openDatabase(dbFile.getPath(), null, SQLiteDatabase.OPEN_READWRITE);*/
+
+			File dbTmp = new File(Util.DirApp(), "Temp.db");
+			tmp = SQLiteDatabase.openDatabase(dbTmp.getPath(), null, SQLiteDatabase.OPEN_READWRITE);
+
+			// iniciar transacciones para garantizar la correcta insercion en
+			// las base de datos.
+			//db.beginTransaction();
+			tmp.beginTransaction();
+			/*
+			 * captura de los datos que seran insertados en las bases de datos.
+			 */
+			ContentValues values = new ContentValues();
+			values = new ContentValues();
+
+			values.put("Cod_usuario", usuario.codigoVendedor);
+			values.put("ValorInventario", inventario);
+			values.put("ValorCargue", cargue);
+			values.put("SubTotal", subtotal);
+			values.put("ValorConsignacion", consignacion);
+			values.put("ValorCambio", cambios);
+			values.put("ValorDescuento", descuentos);
+			values.put("ValorReteica", reteica);
+			values.put("ValorRetencion", retefuente);
+			values.put("Total", total);
+			values.put("FechaMovil", fechaMovil);
+
+
+			// se hace la atualizacion del producto pedido. en ambas bases de
+			// datos.
+			//rowDb = db.insertOrThrow("encabezado_venta", null, values);
+			rowTmp = tmp.insertOrThrow("CarteraCarro", null, values);
+
+			// verificar que la actualizacion fue correcta en ambas bases de
+			// datos. y confirmar la transaccion como exitosa.
+			if (rowDb != -1 && rowTmp != -1) {
+
+				// actualizar el detalle
+				//boolean actualizado = actualizarDetallePedidoAv(numeroDocPedidoAv, db, tmp);
+				insertado = true;
+				//db.setTransactionSuccessful();
+				tmp.setTransactionSuccessful();
+			} else {
+				throw new Exception("No se logro insertar datos de encabezado " );
+			}
+		} catch (Exception e) {
+			Log.e("No se logró insertar datos de encabezado", "error: " + e.getMessage());
+		} finally {
+			//closeDataBase(db);
+			closeDataBase(tmp);
+		}
+		return insertado;
 	}
 
 }
