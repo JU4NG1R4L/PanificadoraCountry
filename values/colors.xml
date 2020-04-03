@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Negro">#000000</color>
+    <color name="Blanco">#FFFFFF</color>    
+    <color name="Transparente">#00000000</color>
+    
+    <color name="gold">#8A682F</color>
+    <color name="dark_red">#B42A24</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_gray">#808080</color>
+    <color name="gray">#F4F4F4</color>
+    <color name="blue">#2E65AD</color>
+    <color name="black">#000000</color>
+    <color name="dark_blue">#1832A0</color>
+    <color name="ligth_blue">#12A5E2</color>
+    <color name="contraste_fondo">#000000</color>
+    
+    <color name="button_color">#370404</color>
+    <color name="text_color">#370404</color>
+    <color name="title_color">#FFFFFF</color> <!-- Color del Texto de las Barras de Titulo -->
+    <color name="title_color_2">#808080</color>
+
+
+
+
+    <color name="progress_bg">#f1efef</color>
+    <color name="blanco">#ffffff</color>
+    <color name="line">#f9e36b</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="azul_claro">#0061a9</color>
+    <color name="gris_claro">#eeeeee</color>
+    <color name="gris_oscuro">#888888</color>
+    <color name="naranja">#ff8000</color>
+    <color name="azul_cielo">#05b6f3</color>
+    <color name="gris">#cccccc</color>
+    <color name="rojo">#FF0000</color>
+    <color name="colorPrimary">#172983</color>
+    <color name="colorPrimaryDark">#172983</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="colorAccent">#66000000</color>
+    <color name="colorAccent1">#ffffff</color>
+    <color name="colorBackground">#EBEBEB</color>
+    <color name="progress_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>#001944
+    <color name="divider">#BDBDBD</color>
+    <color name="colorPrimaryDarkDark">#001944</color>
+    <color name="colorDisable">#C4C4C4</color>
+    <color name ="verde">#2BAA16</color>
+    <color name="grey">#646464</color>
+    <color name="gris_disable">#F1EBEB</color>
+
+
+
+</resources>

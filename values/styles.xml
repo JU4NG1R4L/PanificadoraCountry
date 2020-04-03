@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Animations" />
+
+    <style name="Animations.GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.GrowFromTop">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="TransparentListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    
+    <style name="ButtonOptionsStyle">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+    
+       <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+         <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+
+     <style name="ButtonStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#435E71</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+        <style name="FullscreenTheme" parent="AppTheme">
+            <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+            <item name="android:windowActionBarOverlay">true</item>
+            <item name="android:windowBackground">@null</item>
+        </style>
+
+        <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+            <item name="android:background">@color/black_overlay</item>
+        </style>
+
+        <style name="TextView.InputLabel" parent="TextAppearance.AppCompat.Caption">
+            <item name="android:textColor">?android:textColorHint</item>
+            <item name="android:paddingBottom">8dp</item>
+            <item name="android:paddingLeft">4dp</item>
+            <item name="android:paddingRight">4dp</item>
+        </style>
+
+
+
+</resources>
