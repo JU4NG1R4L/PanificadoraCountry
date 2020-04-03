@@ -414,6 +414,20 @@
                     android:orientation="horizontal"
                     android:visibility="visible" >
 
+
+                    <Button
+                        android:id="@+id/btnCarteraCarro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="10sp"
+                        android:drawableTop="@drawable/op_cartera"
+                        android:onClick="OnClikFormPrincipal"
+                        android:padding="0dp"
+                        android:text="Cartera Carro"
+                        android:textColor="#435E71"
+                        android:textStyle="bold" />
+
                   
                 </LinearLayout>
 
