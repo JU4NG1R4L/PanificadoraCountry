@@ -19,5 +19,37 @@
     <color name="text_color">#370404</color>
     <color name="title_color">#FFFFFF</color> <!-- Color del Texto de las Barras de Titulo -->
     <color name="title_color_2">#808080</color>
-    
+
+
+
+
+    <color name="progress_bg">#f1efef</color>
+    <color name="blanco">#ffffff</color>
+    <color name="line">#f9e36b</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="azul_claro">#0061a9</color>
+    <color name="gris_claro">#eeeeee</color>
+    <color name="gris_oscuro">#888888</color>
+    <color name="naranja">#ff8000</color>
+    <color name="azul_cielo">#05b6f3</color>
+    <color name="gris">#cccccc</color>
+    <color name="rojo">#FF0000</color>
+    <color name="colorPrimary">#172983</color>
+    <color name="colorPrimaryDark">#172983</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="colorAccent">#66000000</color>
+    <color name="colorAccent1">#ffffff</color>
+    <color name="colorBackground">#EBEBEB</color>
+    <color name="progress_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>#001944
+    <color name="divider">#BDBDBD</color>
+    <color name="colorPrimaryDarkDark">#001944</color>
+    <color name="colorDisable">#C4C4C4</color>
+    <color name ="verde">#2BAA16</color>
+    <color name="grey">#646464</color>
+    <color name="gris_disable">#F1EBEB</color>
+
+
+
 </resources>
