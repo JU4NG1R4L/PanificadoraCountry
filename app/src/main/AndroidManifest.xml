@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="co.com.panificadoracountry"
-          android:installLocation="auto">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.com.panificadoracountry"
+    android:versionCode="1"
+    android:versionName="1.9.0" android:installLocation="auto">
+
+    <uses-sdk android:targetSdkVersion="8" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,172 +19,253 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:icon="@drawable/icon"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".FormPrincipalActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormRuteroActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormMenuEstadistica"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormInfoClienteActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormPedidosAutoventa"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormConfigPrinter"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormPrinters"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormPrinters2"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormNoCompraActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormBuscarClienteActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormEstadisticasActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormEstadisticaRecorrido"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormEstadisticaPedidos"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormEstadisticasNoCompra"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormPedidosInformacion"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormRecaudoInformacion"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormDepositoInformacion"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormRecaudoFacturasActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormRecaudoFacturasDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormBuscarProducto"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormCambiosAutoventa"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormPedidosPreventa"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormCambiosPreventa"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormInformeVentas"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormInformeInventario"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormClienteNuevoActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormEditarClienteActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormCarteraInformacion"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FormCarteraCarro"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormConsultarPreciosActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormKardex"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormKardexDetallado"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormDescargueInventario"
             android:label="@string/titulo_form_descargue_inventario"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".FormCargueInventarioSugerido"
-            android:label="@string/title_activity_form_cargue_inventario_sugerido" />
+            android:label="@string/title_activity_form_cargue_inventario_sugerido"
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".FormDepositoActivity"
             android:label="Deposito"
-            android:screenOrientation="portrait" />
-        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+         <activity
             android:name=".FormDevolucionesRealizadas"
             android:label="@string/titulo_form_cambios"
-            android:screenOrientation="portrait" />
-        <activity
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
             android:name=".FormCuadreDeCajaActivity"
             android:label="Cuadre de Caja"
-            android:screenOrientation="portrait" />
-        <activity
+            android:screenOrientation="portrait" >
+        </activity>
+        
+       <activity
             android:name=".FormConteoFisicoInventario"
             android:label="Liquidacion Inventario"
-            android:screenOrientation="portrait" />
-        <activity
+            android:screenOrientation="portrait" >
+        </activity>
+        
+       
+          <activity
             android:name=".FormCuadreDeCajaActivity2"
             android:label="Termina Dia - Cuadre de Caja"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+                tools:replace="android:resource"/>
+        </provider>
+
     </application>
+
+
+
 </manifest>
