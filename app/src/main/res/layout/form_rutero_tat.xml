@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:gravity="top">
+    <!--TableLayout
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tblLayoutInfoCliente"
+    	android:paddingTop="5dp">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+	        <TextView
+		    	android:text="Benvenido, "
+		    	android:textColor="#000000"
+		    	android:textStyle="bold"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"/>
+		    	
+		    <TextView
+		    	android:textColor="#000000"
+		    	android:id="@+id/lblUsuario"    	
+		    	android:layout_width="fill_parent"		    	
+		    	android:layout_height="wrap_content"/>
+		    	
+        </TableRow>
+        
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+			<TextView
+		    	android:text="Empresa: "
+		    	android:textColor="#000000"
+		    	android:textStyle="bold"
+		    	android:layout_width="fill_parent"		    	
+		    	android:layout_height="wrap_content"/>
+		    	
+		    <TextView		    	
+		    	android:id="@+id/lblEmpresaIniciarDia"
+		    	android:textColor="#000000"    	
+		    	android:layout_width="fill_parent"		    	
+		    	android:layout_height="wrap_content"/>
+		    	
+		</TableRow>
+	</TableLayout-->
+    <TableLayout
+        android:id="@+id/tblLayoutOpClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Semana:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/cbSemana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:prompt="@string/prompt_semana"></Spinner>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dia:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/cbDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:prompt="@string/prompt_dia"></Spinner>
+        </TableRow>
+    </TableLayout>
+    <!--TableLayout
+        android:id="@+id/tblLayoutBotones"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tblLayoutOpClientes"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <Button
+                android:text="Enviar Informacion"
+                android:id="@+id/btnAceptarIniciarDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClickFormIniciarDia"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10dp">
+            </Button>
+
+            <Button
+                android:text="Salir"
+                android:id="@+id/btnCancelarIniciarDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClickFormIniciarDia"
+                android:drawableLeft="@drawable/cancelar"
+                android:drawablePadding="10dp">
+            </Button>
+        
+        </TableRow>
+    </TableLayout-->
+    <ListView
+        android:id="@+id/listaClienteRutero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblLayoutOpClientes"
+        android:paddingTop="5dp"
+        android:textColor="#000000" />
+</RelativeLayout>

@@ -1,0 +1,4 @@
+pass: celuweb123
+
+
+url_repo: http://64.239.114.7:8080/svn/PanificadoraCountry/Proyecto/Movil/Android/PanificadoraCountry/

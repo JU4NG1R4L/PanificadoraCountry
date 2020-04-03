@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/codigo_producto"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txtCodigoProducto"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@android:drawable/editbox_background"
+                                android:inputType="number"
+                                android:maxLength="20" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnAceptarOpcionesPedido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@drawable/aceptar"
+                            android:drawablePadding="4dp"
+                            android:background="@color/Transparente"
+                            android:nextFocusDown="@+id/btnTerminarPedido"
+                            android:onClick="OnClickOpcionesPedido"
+                            android:text="@string/ok" />
+
+                        <Button
+                            android:id="@+id/btnUltimoPedido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/Transparente"                           
+                            android:drawableLeft="@drawable/ultimo_pedido"
+                            android:nextFocusDown="@+id/btnTerminarPedido"
+                            android:onClick="OnClickUltimoPedido" />
+                        
+                        <Button
+                            android:id="@+id/btnBuscarProductos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/Transparente"
+                            android:layout_gravity="center_vertical"
+                            android:drawableLeft="@drawable/op_find"
+                            android:nextFocusDown="@+id/btnUltimoPedido"
+                            android:onClick="OnClickBuscarProducto" />
+                    </TableRow>
+                </TableLayout>
+
+                <!--
+		<LinearLayout
+        android:id="@+id/linearRecibo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitulo"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:weightSum="10"
+         >
+
+        
+
+        <Button
+            android:id="@+id/btnAgregarDetalleGastos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="OnClickTerminarPedido"
+            android:drawableLeft="@drawable/aceptar"
+            android:text="Terminar" 
+            android:layout_weight="5"
+            />
+        
+        
+           <Button
+                android:id="@+id/btnCancelarDetalleGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="OnClickCancelarPedido"
+                android:text="Cancelar"
+                android:drawableLeft="@drawable/cancel"
+                android:layout_weight="5"
+                 />
+        
+        
+    </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/linearRecibo2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblTitulo"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <co.com.UI.TransparentPanel
+                        android:id="@+id/panelInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp" >
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/total_items"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblTotalItemsPedido"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sub Total"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/pesos"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/lblSubTotal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="10dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Valor IVA"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/pesos"
+                                    android:textColor="#000000" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalIva"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="10dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/descuento"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/pesos"
+                                    android:textColor="#000000" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblDescuento"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="10dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    style="?android:attr/listSeparatorTextViewStyle"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    style="?android:attr/listSeparatorTextViewStyle"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    style="?android:attr/listSeparatorTextViewStyle"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#000000" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/pesos"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/lblValorNetoPedido"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="10dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" />
+                            </TableRow>
+                        </TableLayout>
+                    </co.com.UI.TransparentPanel>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="0dp"
+                            android:layout_span="2"
+                            android:layout_weight="5"
+                            android:background="@android:color/transparent"
+                            android:onClick="OnClickTerminarPedido"
+                            android:padding="0dp"
+                            android:src="@drawable/op_terminar2" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_span="2"
+                            android:layout_weight="5"
+                            android:background="@android:color/transparent"
+                            android:onClick="OnClickCancelarPedido"
+                            android:padding="0dp"
+                            android:src="@drawable/op_cancelar2" />
+                                                
+                        <!--
+			 <Button
+            android:id="@+id/btnAgregarDetalleGastos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="OnClickTerminarPedido"
+            android:drawableLeft="@drawable/aceptar"
+            android:text="Terminar" 
+            android:layout_weight="5"
+            />
+			
+			   <Button
+                android:id="@+id/btnCancelarDetalleGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="OnClickCancelarPedido"
+                android:text="Cancelar"
+                android:drawableLeft="@drawable/cancel"
+                android:layout_weight="5"
+                 />
+                        -->
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listaPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- 
+            <SlidingDrawer
+                android:id="@+id/slidingDrawerPro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:content="@+id/content"
+                android:handle="@+id/handle" >
+
+                <ImageView
+                    android:id="@+id/handle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/barra" />
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/background_"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/lblOpcionesBusq"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Opciones: "
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/cbOpBusquedaProduc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/prompt_op_busqueda" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lineas: "
+                                android:textColor="#000000"
+                                android:visibility="gone" />
+
+                            <Spinner
+                                android:id="@+id/cbLinerasProduc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/prompt_categoria"
+                                android:visibility="gone" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/lblOpBusquedaProduc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tableLayoutOpLineas"
+                        android:text="Ingrese Parte del Nombre:"
+                        android:textColor="#000000" >
+                    </TextView>
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/txtOpBusquedaProduc"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:background="@android:drawable/editbox_background"
+                                android:inputType="text"
+                                android:textColor="#000000" >
+                            </EditText>
+
+                            <Button
+                                android:id="@+id/btnBusquedaProduc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/aceptar"
+                                android:drawablePadding="10sp"
+                                android:onClick="OnClickFormBuscarProducto"
+                                android:paddingTop="5dp"
+                                android:text="@string/buscar" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <ListView
+                        android:id="@+id/listaBusquedaProductos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtOpBusquedaProduc" />
+                </LinearLayout>
+            </SlidingDrawer>
+            
+             -->
+            
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

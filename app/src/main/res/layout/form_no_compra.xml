@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+    <FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		
+        <LinearLayout 
+
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+    		
+		    <TableLayout
+		    	android:layout_height="wrap_content" 
+		    	android:layout_width="wrap_content" 
+		    	android:id="@+id/tblLayoutNoCompra"
+		    	android:paddingTop="5dp"
+		    	android:padding="10dp"
+		    	android:layout_marginTop="5dp">
+		    	
+		        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+		        
+				    <TextView
+				    	android:text="Seleccione Motivo:  "  
+				    	android:textStyle="bold"
+				    	android:textColor="#000000" 
+				    	android:id="@+id/lblOpcionesNoCompra"		    	
+				    	android:layout_width="wrap_content"		    	
+				    	android:layout_height="wrap_content">
+				    </TextView>
+				    
+				    <Spinner 
+				    	android:id="@+id/cbNoCompra"
+				    	android:layout_height="wrap_content" 
+				    	android:background="@drawable/apptheme_spinner_default_holo_light"
+				    	android:prompt="@string/prompt_op_busqueda">
+					</Spinner>
+				    
+		        </TableRow>
+		    </TableLayout>
+    
+		    <TableLayout
+		    	android:paddingTop="5dp"
+		    	android:background="#FFFFFF"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:visibility="gone"
+		    	>
+		    	
+	
+		    </TableLayout>
+    	</LinearLayout>
+	</FrameLayout>
+	
+	<LinearLayout
+        style="@android:style/MediaButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal">
+    
+	    <TableLayout 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_gravity="center_horizontal">
+	    	
+	        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+	        	
+	        	<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="140dp" 
+					android:layout_height="fill_parent"
+					android:layout_gravity="center_horizontal">
+		        	
+		        	<Button
+				    	android:id="@+id/btnAceptarFormNoCompra"
+				    	android:textStyle="bold"
+				    	android:text="@string/aceptar"
+				    	android:drawablePadding="5dp"
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:onClick="OnClickFormNoCompra"
+				    	android:drawableTop="@drawable/check"
+				    	android:textColor="#000000"
+				    	android:background="@android:color/transparent" />
+				 </LinearLayout>
+	        	
+	        	<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="140dp" 
+					android:layout_height="fill_parent"
+					android:layout_gravity="center_horizontal">
+		        	
+		        	<Button 
+				    	android:id="@+id/btnCancelarFormNoCompra"
+				    	android:textStyle="bold"
+				    	android:text="@string/regresar" 
+				    	android:drawablePadding="5dp"
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content"
+				    	android:onClick="OnClickFormNoCompra"
+				    	android:textColor="#000000"
+				    	android:drawableTop="@drawable/op_regresar"
+						android:background="@android:color/transparent" />
+				 </LinearLayout>
+	        </TableRow>
+    	</TableLayout>
+    </LinearLayout>
+</LinearLayout>

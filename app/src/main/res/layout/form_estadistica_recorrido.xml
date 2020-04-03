@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+         >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Resumen Recorrido"
+                android:textColor="#9C7D0000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tblLayoutFormPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+       
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Pedidos: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblTotalPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/trTotalDevoluciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Devoluciones: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblTotalDevoluciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedidos Sincronizados: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblPedidosSincronizados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/trDevSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devoluciones Sincronizados: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblDevolucionesSincronizados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Compras: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblNoCompras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+        
+        
+        
+        
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedidos + No Compras: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblVisitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+        
+        
+        
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedidos Sin Sincronizar: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblPedidosSinSincronizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/trDevSinSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devoluciones Sin Sincronizar: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblDevolucionesSinSincronizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectividad: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblEfectividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/porcentaje"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Venta: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblTotalVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/trTotalDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Devoluciones: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblValorDevoluciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="3dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+        
+    </TableLayout>
+
+</LinearLayout>

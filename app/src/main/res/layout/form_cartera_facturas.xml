@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:gravity="top"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registro de Facturas"
+        android:textColor="@color/Negro"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+   
+
+    <TableLayout
+        android:id="@+id/tableLayoutOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/lblTitulo"
+         >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp" 
+            android:weightSum="9"
+            >
+            
+          
+       
+        <Button
+            android:id="@+id/btnAgregarCarteraRecaudo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/adicionar_inventario"
+            android:nextFocusDown="@+id/btnTerminarCartera"
+            android:onClick="OnClickAgregarCarteraRecaudo"
+            android:text="Add"
+            android:layout_weight="3"
+             />
+   
+            
+
+            <Button
+                android:id="@+id/btnTerminarCartera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sig"
+                android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+                android:onClick="OnClickContinuarCartera"
+                android:text="Continuar." 
+                 android:layout_weight="3"
+                />
+
+            <Button
+                android:id="@+id/btnCancelarPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/cancel"
+                android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+                android:onClick="OnClickCancelarCartera"
+                android:text="Salir"
+                 android:layout_weight="3"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbrinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            
+              <TextView
+                android:id="@+id/lblValorRecaudado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tableLayoutOpciones"
+                android:text="Total: $0"
+                android:textColor="@color/Negro" />
+
+            <TextView
+                android:id="@+id/lblOtrosDescuentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblValorRecaudado"
+                android:text=""
+                android:textColor="@color/Negro" />
+            
+          
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listaCarteraRecaudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableLayoutOpciones"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="0dip"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+</RelativeLayout>

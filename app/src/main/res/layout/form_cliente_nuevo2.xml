@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+ 
+         <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+              >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp" >
+
+                    
+                    
+
+
+           
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp" >
+
+                     
+
+                <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            
+                             >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Ciudad"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            
+                            <Spinner 
+                                
+                                android:id="@+id/cbCiudad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                
+                                
+                                />
+                            
+                        </TableRow>
+                        
+                        
+                        
+                        
+                        
+                    
+                         
+                         
+                           <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" 
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Canal"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                          
+                            
+                             <Spinner 
+                                
+                                android:id="@+id/cbCanal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                
+                                
+                                />
+                            
+                        </TableRow>
+                         
+                           
+                             <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                             >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Sub Canal"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                        
+                             <Spinner 
+                                
+                                android:id="@+id/cbSubCanal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                
+                                
+                                />
+                            
+                            
+                        </TableRow>
+                         
+                           
+                            
+                             
+                             <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                             >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Lista Precios"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                        
+                             <Spinner 
+                                
+                                android:id="@+id/cbListaPrecios"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                
+                                
+                                />
+                            
+                            
+                        </TableRow>
+                             
+                             
+                         
+                          
+                           
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        </TableRow>
+
+                       
+                    </TableLayout>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/status_bar"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnGuardarCN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/check"
+                android:onClick="OnClickGuardarCliente"
+                android:text="@string/guardar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/op_regresar"
+                android:onClick="OnClickCancelarClienteNuevo"
+                android:text="@string/cancelar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

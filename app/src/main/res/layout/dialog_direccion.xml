@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+    <TextView
+		android:text="Desea Ingresar esta Direccion?"
+		android:textColor="#2E65AD"  	
+    	android:layout_width="fill_parent"	    
+    	android:layout_height="wrap_content"
+    	android:id="@+id/lblTituloTextField1" 
+    	android:textStyle="bold"
+    	android:paddingBottom="10dp"
+    	android:textSize="18dp"
+    	/>
+	
+	
+    
+    
+    
+    
+	<TextView
+		android:text="Direccion"
+		android:textColor="#2E65AD"
+    	android:id="@+id/lblTituloTextField2"    	
+    	android:layout_width="fill_parent"	    
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/lblTituloTextField1" 
+    	android:paddingBottom="10dp"
+    	android:textSize="18dp"
+    	
+    	/>
+	
+	
+	
+	<TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tableLayoutOpPedido" 
+    	android:layout_below="@+id/lblTituloTextField2" 
+    	android:layout_centerHorizontal="true"
+    	android:paddingTop="5dp">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+		    <Button
+		    	android:text="Aceptar"
+		    	android:id="@+id/btnAceptarDialogDireccion"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/con_medicion"
+		    	android:drawablePadding="10sp">
+		    </Button>
+		    
+		    <Button
+		    	android:text="Cancelar"
+		    	android:id="@+id/btnCancelarDialogDireccion"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/sin_medicion"
+		    	android:drawablePadding="10sp">
+		    </Button>
+		    
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

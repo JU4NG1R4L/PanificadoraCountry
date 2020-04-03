@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblBusquedaDeposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/param_busqueda"
+                android:textColor="#1D437A"
+                android:textStyle="bold" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtBusquedaSaldo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/hint_busqueda_deposito"
+                    android:inputType="text"
+                    android:textColor="#000000" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnBusquedaSaldoCancelado"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/busqueda"
+                    android:drawablePadding="10sp"
+                    android:onClick="onClickBuscarSaldos"
+                    android:paddingTop="5dp"
+                    android:text="@string/buscar"
+                    android:textColor="#1D437A" >
+                </Button>
+                
+                
+            </LinearLayout>
+			  <FrameLayout 
+			      android:layout_width="match_parent"
+			      android:layout_height="0dp"
+			      android:layout_weight="1"
+			      
+			      >
+			            <ListView
+			                android:id="@+id/listaBusquedaSaldos"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:cacheColorHint="@android:color/transparent"
+			                android:paddingTop="5dp" >
+			            </ListView>
+			     </FrameLayout>       
+           <TextView
+                android:id="@+id/lblTotalDeposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:paddingTop="5dp" 
+                 android:layout_centerHorizontal="true"
+                 android:textSize = "20dp"
+                android:textColor="#1D437A"
+                android:textStyle="bold" 
+                android:paddingLeft="48dp">
+            </TextView>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnDepositar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/aceptar"
+            android:drawablePadding="10sp"
+            android:onClick="onClickDepositar"
+            android:paddingTop="5dp"
+            android:text="@string/depositar"
+            android:textColor="#1D437A" >
+        </Button>
+       
+          <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/cancel"
+            android:drawablePadding="10sp"
+            android:onClick="onClickSalirDeposito"
+            android:paddingTop="5dp"
+            android:text="Salir"
+            android:textColor="#1D437A"
+            android:layout_marginLeft="20dp"
+             >
+        </Button>
+        
+    </LinearLayout>
+
+</LinearLayout>

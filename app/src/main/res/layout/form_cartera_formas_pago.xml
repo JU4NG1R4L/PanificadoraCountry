@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblFormaPago"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/Negro" /><TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" 
+                    android:weightSum="10"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioEfectivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickPagoEfectivo"
+                        android:text="Efectivo"
+                        android:textColor="@color/Negro"
+                        android:layout_weight="5"
+                         />
+
+                    <RadioButton
+                        android:id="@+id/radioCheque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClickPagoCheque"
+                        android:text="Cheque"
+                        android:textColor="@color/Negro"
+                        android:layout_weight="5"
+                         />
+                </TableRow>
+               <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:weightSum="10"
+                     >
+
+                            <RadioButton
+            android:id="@+id/radioChequePostFechado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickPagoChequePostFechado"
+            android:text="Ch. Postfechado"
+            android:textColor="@color/Negro"
+            android:layout_weight="5"
+            android:visibility="gone"
+             />
+                            
+                            
+                                    <RadioButton
+            android:id="@+id/radioConsignacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickPagoConsignacion"
+            android:text="Consignacion"
+            android:textColor="@color/Negro" 
+            android:layout_weight="5"
+            />
+                    
+                    
+                  
+                    
+                    
+                </TableRow> 
+                
+                
+                
+                
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/panelInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_gris"
+                android:padding="8dp" >
+
+                <TableLayout
+                    android:id="@+id/tblLayoutFormasPago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_recaudo"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/pesos"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/lblTotalRecaudo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_formas_pago"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/pesos"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/lblTotalFormasPago"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="?android:attr/listSeparatorTextViewStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="5dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            style="?android:attr/listSeparatorTextViewStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="5dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            style="?android:attr/listSeparatorTextViewStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="5dp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/diferencia"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/pesos"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/lblDiferenciaFormasPago"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" >
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollFormasDePago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearOpciones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_bar"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnTerminarFormaPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/check"
+                android:onClick="OnClikTerminarFormaPago"
+                android:text="@string/terminar"
+                android:background="@android:color/transparent" 
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCancelarFormasPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/op_regresar"
+                android:onClick="OnClikCancelarFormaPago"
+                android:text="@string/cancelar" 
+                android:background="@android:color/transparent" 
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

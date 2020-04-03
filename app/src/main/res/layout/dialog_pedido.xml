@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/lblDescProducto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2E65AD"
+        android:textSize="13dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/lblPrecio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/lblInventario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/lblDcto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/lblPromocion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <TableLayout
+        android:id="@+id/tblLayoutOpcionesPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblCantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cant. "
+                        android:textColor="#000000"
+                        android:textSize="13dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtCantidadProc"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background"
+                        android:inputType="number" >
+                    </EditText>
+                </LinearLayout>
+
+               
+            </LinearLayout>
+        </TableRow>
+
+       
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tblMotivoCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <Spinner
+                android:id="@+id/cbMotivoCambio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/prompt_motivo_cambio" >
+            </Spinner>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tblLayoutBotonesPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnVentaOpcionesPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10sp"
+                android:text="Aceptar" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancelarOpcionesPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cancel"
+                android:drawablePadding="10sp"
+                android:text="Cancelar" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

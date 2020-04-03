@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+   
+            
+             <TableLayout
+                android:id="@+id/tableLayoutOpBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/lblOpcionesBusq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Opciones: "
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/cbOpBusquedaProduc"
+                        android:layout_height="wrap_content"
+                        android:nextFocusDown="@+id/txtOpBusquedaProduc"
+                        android:prompt="@string/prompt_op_busqueda" />
+                </TableRow>
+            </TableLayout>
+            
+            
+
+            <TableLayout
+                android:id="@+id/tableLayoutOpLineas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tableLayoutOpBusqueda"
+                android:paddingTop="5dp" >
+
+                
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/lblOpBusquedaProduc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tableLayoutOpLineas"
+                android:text="Ingrese Parte del Nombre:"
+                android:textColor="#000000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtOpBusquedaProduc"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lblOpBusquedaProduc"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="text"
+                android:textColor="#000000" >
+            </EditText>
+
+            <ListView
+                android:id="@+id/listaBusquedaProductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnTerminarPrecio"
+                android:cacheColorHint="@android:color/transparent"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        style="@android:style/MediaButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnBusquedaProduc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/op_buscar"
+                android:onClick="OnClickFormBuscarProducto"
+                android:text="@string/buscar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/check"
+                android:onClick="OnClickFormTerminarPrecio"
+                android:text="Terminar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/cargar_inventario"
+                android:onClick="OnClickFormUltimaVisita"
+                android:text="Ultima Visita"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

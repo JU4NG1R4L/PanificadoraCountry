@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:gravity="center_horizontal"
+    >
+    
+    <ScrollView 
+        
+          android:layout_width="match_parent"
+           android:layout_height="match_parent" 
+            android:background="#FFFFFF"
+        >
+    
+    <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+         >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblClienteResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9C7D0000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutResumenCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/pesos"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblSubTotalResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iva: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/pesos"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblIVAResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descuento: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/pesos"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblDescuentoResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:textColor="#000000" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:textColor="#000000" />
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:textColor="#000000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/pesos"
+                android:textColor="#000000" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblTotalResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:text="@string/cero"
+                android:textColor="#000000" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <!--
+    TableLayout
+    	android:layout_marginTop="10dp"
+    	android:id="@+id/tblMotivoCambio"
+   		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	
+        <TableRow>
+        	<TextView
+		    	android:text="Motivo: "
+		    	android:textColor="#000000"
+		    	android:textStyle="bold"
+		    	android:layout_width="wrap_content"		    	
+		    	android:layout_height="wrap_content"/>		    
+		    <Spinner 
+		   		android:id="@+id/cbMotivoCambio"
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content" 
+		   		android:prompt="@string/prompt_motivo_cambio">
+		   	</Spinner>        
+        </TableRow>
+    </TableLayout
+    -->
+
+    <TableRow
+        android:id="@+id/trCreditoContado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingBottom="5dp"
+        android:weightSum="9" 
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/radioContado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:checked="true"
+            android:text="Contado"
+            android:textColor="@color/Negro" />
+
+        <RadioButton
+            android:id="@+id/radioCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Credito "
+            android:textColor="@color/Negro" />
+    </TableRow>
+    
+    
+    
+                 <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                  <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="F. Entrega: "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+         
+    
+    
+    
+    
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:weightSum="1" >
+            
+            
+
+            <LinearLayout
+                android:id="@+id/lyFechaEntrega"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                
+
+                <EditText
+                    android:id="@+id/editTextFechaEntregaPedidoAv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.7"
+                    android:inputType="date"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/buttonFechaEntregaPedidoAv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Btn_fecha_entrega"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/calendar_icon_63" />
+            </LinearLayout>
+        </TableRow>
+    
+    
+    
+    
+
+    <TextView
+        android:id="@+id/lblObservacionPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Observacion:"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtObservacionPedido"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textMultiLine"
+        android:maxLength="50"
+        android:maxLines="3" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutResumenPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnAceptarResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10sp"
+                android:text="Aceptar" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancelarResumenPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cancel"
+                android:drawablePadding="10sp"
+                android:text="Cancelar" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

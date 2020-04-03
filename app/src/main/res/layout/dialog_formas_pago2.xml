@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblFormaPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblValorRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+    <!--
+       DatePicker 
+   		android:id="@+id/datePickerFormaPago" 
+   		android:layout_width="wrap_content" 
+   		android:layout_below="@id/tblLayoutOpcionesPagos"
+   		android:layout_height="wrap_content">
+   	</DatePicker
+    -->
+
+
+    <!--
+    TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tblLayoutFormasPago"
+    	android:paddingTop="5dp">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+		    <TextView
+		    	android:textStyle="bold"
+		    	android:text="Forma de Pago: " 
+		    	android:textColor="#000000"
+		    	android:layout_width="wrap_content"		    	
+		    	android:layout_height="wrap_content" />
+		    <Spinner 
+		    	android:id="@+id/cbFormasDePago"
+		    	android:layout_height="wrap_content" 
+		    	android:prompt="@string/prompt_formas_de_pago" />
+        </TableRow>
+    </TableLayout
+    -->
+
+    <TableLayout
+        android:id="@+id/tblLayoutOpcionesPagos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valor"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorFormaPago"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowNroCheque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nro_cheque"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNroCheque"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowNroCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nro_cuenta"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNroCuenta"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banco"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/cbBancosFormaPago"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/prompt_seleccione"
+                android:visibility="visible" />
+        </TableRow>
+    </TableLayout>
+
+    <!--
+    TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tblLayoutPlazaFormaPago" 
+    	android:layout_below="@id/cbBancosFormaPago"
+    	android:paddingTop="5dp"
+    	android:visibility="invisible">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+		    <TextView
+		    	android:textStyle="bold"
+		    	android:text="Plaza: " 
+		    	android:textColor="#000000"
+		    	android:layout_width="wrap_content"		    	
+		    	android:layout_height="wrap_content">
+		    </TextView>
+		    
+		    <Spinner 
+		    	android:id="@+id/cbPlazaFormasPago"
+		    	android:layout_height="wrap_content" 
+		    	android:prompt="@string/prompt_seleccione">
+			</Spinner>
+		    
+        </TableRow>
+    </TableLayout
+    -->
+
+    <TableLayout
+        android:id="@+id/tableLayoutOpcionesFormasPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <Button
+                android:id="@+id/btnAceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10sp"
+                android:text="@string/aceptar" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cancel"
+                android:drawablePadding="10sp"
+                android:text="@string/cancelar" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <!--
+    TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tblLayoutFormInfoCliente" 
+    	android:layout_below="@+id/tblLayoutInformacionCliente"
+    	android:paddingTop="5dp"
+    	android:layout_centerHorizontal="true">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        	
+        	<Button
+		    	android:text="Pedidos"
+		    	android:id="@+id/btnPedidos"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/pedido"    	
+		    	android:drawablePadding="10sp"
+		    	android:onClick="OnClikFormInfoCliente">
+		    </Button>
+		    <Button
+		    	android:text="Recaudo"
+		    	android:id="@+id/btnRecaudo"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/pedido"    	
+		    	android:drawablePadding="10sp"
+		    	android:onClick="OnClikFormInfoCliente">
+		    </Button>
+		    
+        </TableRow>
+        
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+        	<Button 
+		    	android:text="No Compra" 
+		    	android:id="@+id/btnNoCompra"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:drawablePadding="10sp"
+		    	android:drawableLeft="@drawable/no_compra"		    	 
+		    	android:onClick="OnClikFormInfoCliente">
+		    </Button>
+		    <Button 
+		    	android:text="Cancelar" 
+		    	android:id="@+id/btnAtras"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawablePadding="10sp"
+		    	android:drawableLeft="@drawable/cancel"
+		    	android:onClick="OnClikFormInfoCliente">
+		    </Button>
+        </TableRow>
+        
+    </TableLayout
+    -->
+
+</LinearLayout>

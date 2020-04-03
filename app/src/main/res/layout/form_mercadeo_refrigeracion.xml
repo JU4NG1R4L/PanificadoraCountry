@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableLayoutOpBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/lblRefrigeradores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refrigeradores: "
+                        android:textColor="#000000" />
+                    
+                    </TableRow>
+                    
+                 <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/cbRefrigeradores"
+                        android:layout_height="wrap_content"
+                        android:nextFocusDown="@+id/txtOpBusquedaProduc"
+                        android:prompt="@string/prompt_op_busqueda" />
+                </TableRow>
+            
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/lblTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tableLayoutOpBusqueda"
+                android:text="Temperatura:"
+                android:textColor="#000000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtTemperatura"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblTemperatura"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number"
+                android:textColor="#000000" >
+            </EditText>
+            
+            <TextView
+                android:id="@+id/lblObseracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTemperatura"
+                android:text="Observacion:"
+                android:textColor="#000000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtObservacion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lblObseracion"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="text"
+                android:textColor="#000000" >
+            </EditText>
+	
+            <ListView
+                android:id="@+id/listaRefrigeracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtObservacion"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        style="@android:style/MediaButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="OnClickFormAgregarRefrigeracion"
+                android:text="Agregar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="OnClickFormTerminarRefrigeracion"
+                android:text="Terminar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="OnClickCancelarPrecio"
+                android:text="@string/cancelar"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

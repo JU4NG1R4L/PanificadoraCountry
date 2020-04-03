@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:padding="10dp"
+    android:background="@drawable/background_">
+	
+	<TextView
+		android:id="@+id/lblMsgTerminarDia"
+		android:text="Ingresar Codigo de Verificacion"
+		android:textColor="#000000"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</TextView>
+	
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+    	android:layout_below="@+id/lblMsgTerminarDia"
+    	android:layout_centerHorizontal="true"
+    	android:paddingTop="5dp">
+    	
+	    
+	    
+	    <EditText
+	    android:id="@+id/etCodigoVerificacion"    
+	    android:layout_height="wrap_content"
+		android:layout_width="150dp"
+		android:textColor="@color/black"
+		android:hint="Codigo"
+		android:inputType="textPassword"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+	        
+	         />
+	    
+	
+		<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">\
+			<Button
+				android:id="@+id/btnAceptar"
+				android:text="Aceptar"  
+				android:drawablePadding="10dp"
+				android:layout_width="wrap_content" 		    	
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/aceptar">
+		    </Button>
+			<Button
+				android:id="@+id/btnCancelar"
+		    	android:text="Cancelar"
+		    	android:drawablePadding="10sp"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/cancel">
+		    </Button>
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:background="#FFFFFF"
+    android:layout_marginTop="5dp">
+  
+	<!--ImageView 
+    	android:id="@+id/imageLogin"
+    	android:layout_width="wrap_content"    	 
+    	android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+    	android:src="@drawable/logo_superior">
+    </ImageView-->
+    
+    <TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tblLayoutDescuentoCartera">
+    	
+    	<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        	<TextView
+		    	android:text="Descuento:"
+		    	android:textColor="#000000"
+		    	android:textStyle="bold"
+		    	android:layout_width="fill_parent"		    	
+		    	android:layout_height="wrap_content"/>
+		   	<Spinner 
+		   		android:id="@+id/cbDescuentoCartera" 
+		   		android:layout_height="wrap_content" 
+		   		android:prompt="@string/prompt_descuento_cartera" 
+		   		android:layout_marginLeft="2dp" 
+		   		android:layout_width="wrap_content">
+		   	</Spinner>
+        </TableRow>
+        
+        <!--TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+	    	<TextView
+		    	android:text="Valor:"
+		    	android:textStyle="bold"
+		    	android:textColor="#000000"
+		    	android:id="@+id/lblValorDescuento"    	
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"/>
+	    
+		    <EditText 
+		    	android:id="@+id/txtValorDescuento" 
+		    	android:maxLength="20"
+		    	android:inputType="number"
+		    	android:layout_width="150dp" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginLeft="5dp" 
+		    	android:background="@android:drawable/editbox_background">
+		    </EditText>
+    	</TableRow-->
+        
+    </TableLayout>
+    
+    <TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tblLayoutOpDescuentoCartera"
+    	android:layout_below="@+id/tblLayoutDescuentoCartera">
+    	
+    	<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+	    	
+	    	<TextView
+		    	android:text="Valor:"
+		    	android:textColor="#000000"
+		    	android:id="@+id/lblValorDescuento"    	
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"/>
+	    
+		    <EditText 
+		    	android:id="@+id/txtValorDescuento" 
+		    	android:maxLength="20"
+		    	android:inputType="number"
+		    	android:layout_width="120dp" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginLeft="3dp" 
+		    	android:background="@android:drawable/editbox_background">
+		    </EditText>
+		    
+		    <Button
+		    	android:text="Aceptar"
+		    	android:id="@+id/btnAceptarDescuentoCartera"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:drawableLeft="@drawable/aceptar"    	
+		    	android:drawablePadding="5dp"
+		    	android:nextFocusDown="@+id/btnTerminarPedido"
+		    	android:onClick="OnClickAceptarDescuentoCartera">
+		    </Button>
+    	</TableRow>
+    </TableLayout>
+		
+    <!--Button
+    	android:text="Agregar"
+    	android:id="@+id/btnAgregarCarteraRecaudo"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/lblValorDescuento" 
+    	android:textColor="#000000"
+    	android:drawableLeft="@drawable/aceptar"    	
+    	android:drawablePadding="10sp"
+    	android:nextFocusDown="@+id/btnTerminarCartera"
+    	android:layout_toRightOf="@+id/txtValorDescuento"
+    	android:onClick="OnClickAgregarCarteraRecaudo">
+    </Button-->
+    
+    <!--Button
+    	android:id="@+id/btnBuscarOpcionesPedido"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/lblValorDescuento" 
+    	android:textColor="#000000"
+    	android:drawableLeft="@drawable/busqueda"    	
+    	android:nextFocusDown="@+id/btnTerminarCartera"
+    	android:layout_toRightOf="@+id/btnAgregarCarteraRecaudo"
+    	android:onClick="OnClickOpcionesPedido">
+    </Button-->
+    
+    <!--TableLayout 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" 
+	    	android:id="@+id/tableLayoutOpciones" 
+	    	android:layout_below="@id/btnAgregarCarteraRecaudo"
+	    	android:layout_marginBottom="12dp"
+	    	android:layout_centerHorizontal="true"
+	    	android:paddingTop="4dp">
+	    	
+	        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+	        
+			    <Button 
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="wrap_content" 
+			    	android:text="Terminar" 
+			    	android:onClick="OnClickOpcionesPedido" 
+			    	android:drawableLeft="@drawable/terminar" 
+			    	android:id="@+id/btnTerminarCartera" 
+			    	android:drawablePadding="10sp" 
+			    	android:nextFocusUp="@+id/txtValorDescuento">
+			    </Button>
+			    
+			    <Button
+			    	android:text="Cancelar"
+			    	android:id="@+id/btnCancelarPedido"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:drawableLeft="@drawable/cancel"    	
+			    	android:drawablePadding="10sp"
+			    	android:nextFocusUp="@+id/txtValorDescuento"
+			    	android:onClick="OnClickOpcionesPedido">
+			    </Button>
+			    
+	        </TableRow>
+	    </TableLayout-->
+	    
+	 <!--TextView
+    	android:text="Total: $0"
+    	android:id="@+id/lblValorRecaudado"
+    	android:textColor="#000000" 
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/tableLayoutOpciones"
+    	android:layout_height="wrap_content"/-->
+    	
+    <!--TextView
+    	android:text="Otros Descuentos: $0"
+    	android:id="@+id/lblOtrosDescuentos"
+    	android:textColor="#000000" 
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/lblValorRecaudado"
+    	android:layout_height="wrap_content"/-->
+	    
+	 <ListView 
+	 	android:id="@+id/listaDescuentoCartera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblLayoutOpDescuentoCartera"
+        android:paddingTop="5dp" />
+    
+</RelativeLayout>
+

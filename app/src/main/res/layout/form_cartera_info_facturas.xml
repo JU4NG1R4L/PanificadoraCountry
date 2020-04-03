@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    
+      <TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content"    	
+    	android:id="@+id/tblLayoutInformacionSaldo"    	
+    	android:paddingTop="5dp">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content"   android:paddingBottom="10dp">
+        
+	        <TextView
+	        	android:textStyle="bold" 
+		    	android:text="Saldo:"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="13dip"
+		    	android:textColor="#000000"/>
+		    	
+	    	<TextView
+		    	android:id="@+id/lblSaldo"    	
+		    	android:layout_width="fill_parent" 		    
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="12dip"
+		    	android:layout_marginLeft="5dp"/>
+		    			          
+        </TableRow>
+        
+        
+           <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content"  android:paddingBottom="10dp">
+        
+	        <TextView
+	        	android:textStyle="bold" 
+		    	android:text="Vencido:"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="13dip"
+		    	android:textColor="#000000"/>
+		    	
+	    	<TextView
+		    	android:id="@+id/lblSaldoVenc"    	
+		    	android:layout_width="fill_parent" 		    
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000000"
+		    	android:textSize="12dip"
+		    	android:layout_marginLeft="5dp"/>
+		    			          
+        </TableRow>
+        
+        
+        
+   </TableLayout>
+    
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" >
+
+   
+        
+        <ListView
+            android:id="@+id/listaInfoCartera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_divider"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:dividerHeight="2px"
+             />
+        
+        
+      
+        
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearOpciones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_bar"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- <Button
+                style="@style/ButtonOptionsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/op_terminar"
+                android:onClick="OnClikAceptarInfoCartera"
+                android:text="Recaudo" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCancelarInfoCartera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/op_regresar"
+                android:onClick="OnClikCancelarInfoCartera"
+                android:background="@android:color/transparent"
+                android:text="Atras" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

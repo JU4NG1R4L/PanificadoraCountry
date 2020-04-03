@@ -1,0 +1,175 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.com.panificadoracountry.FormCargueInventarioSugerido" >
+
+    <!-- View principal -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background3" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:visibility="gone"
+             >
+
+            <EditText
+                android:id="@+id/editTextFechaSugerido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:hint="Fecha Sugerido (año-mes-dia)"
+                android:inputType="date" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/ic_action_event"
+                android:contentDescription="@string/aceptar"
+                android:onClick="cargarFechaSugerido"
+                android:text="ingresar fecha" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutFecha"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:visibility="gone"
+             >
+
+            <EditText
+                android:id="@+id/editTextParametroBusqueda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:focusableInTouchMode="true"
+                android:hint="Codigo/Descripcion"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete"
+                android:maxLength="25" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:onClick="onClickBuscarProducto"
+                android:text="Buscar" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewCargueInventarioSugerido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayoutButtton"
+            android:layout_below="@id/linearLayoutSearch"
+            android:layout_margin="4dp"
+            android:layout_marginTop="8dp" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@id/linearLayoutButtton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+             >
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickTerminarCargue"
+                android:text="Terminar" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickVerCargueSugerido"
+                android:text="Ver" 
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- View alterno para visualizar el pedido sugerido -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutVerCargueSugerido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background3"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVerCargueSugerido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textViewTituloCargueSugerido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.8"
+                android:gravity="center_horizontal"
+                android:text="@string/titulo_cargue_inventario_sugerido"
+                android:textColor="#07506b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewInventarioSugerido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayoutButttonVer"
+            android:layout_below="@id/linearLayoutVerCargueSugerido"
+            android:layout_margin="4dp"
+            android:layout_marginTop="8dp" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@id/linearLayoutButttonVer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="onClickTerminarCargue"
+                android:text="Terminar" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="onClickAtras"
+                android:text="Atras" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

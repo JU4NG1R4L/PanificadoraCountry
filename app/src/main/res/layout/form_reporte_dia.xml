@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" >
+
+        
+        
+        <LinearLayout
+            
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical" 
+             
+             >
+        
+        
+           <TextView
+        android:id="@+id/lblDateFechaDesde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione Fecha (M-D-YYYY): "
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        />
+ 
+ 
+    <DatePicker
+        android:id="@+id/dpFechaDesde"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/lblDateFechaEnntrega"/>
+    
+    
+    
+       <TextView
+        android:id="@+id/lblDateFechaHasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione Fecha Hasta (M-D-YYYY): "
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        />
+       
+       
+       <LinearLayout
+           
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+           
+           
+            >
+ 
+ 
+    <DatePicker
+        android:id="@+id/dpFechaHasta"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/lblDateFechaEnntrega"/>
+    
+    
+    
+   
+    
+    
+    
+    </LinearLayout>
+    
+       
+       <Spinner 
+        
+        android:id="@+id/spinerOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/apptheme_spinner_default_holo_light"
+
+        
+        />
+    
+    
+    <LinearLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo:  "
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        />
+    
+    <Spinner
+        
+        android:id="@+id/spTipo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        
+         />
+    
+    </LinearLayout>
+    
+
+
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp" >
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollReporte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+    
+       </LinearLayout> 
+        
+        
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_opciones"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnImprimirInventario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/print"
+                android:onClick="OnClickImprimir"
+                android:text="Imprimir"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

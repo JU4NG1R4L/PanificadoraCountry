@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:background="#FFFFFF"
+    android:layout_margin="5dp">
+  
+	<!--ImageView 
+    	android:id="@+id/imageLogin"
+    	android:layout_width="wrap_content"    	 
+    	android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+    	android:src="@drawable/logo_superior">
+    </ImageView-->
+    
+    <TextView
+    	android:text="Numero Recibo:"
+    	android:textColor="#000000"
+    	android:id="@+id/lblNumeroRecibo"    	
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"/>
+    	
+    <EditText 
+    	android:maxLength="10"
+    	android:inputType="number"
+    	android:id="@+id/txtNumeroReciboRecaudo"
+    	android:layout_width="120dp"
+    	android:layout_height="wrap_content" 
+    	android:background="@android:drawable/editbox_background" 
+    	android:layout_alignBaseline="@+id/btnAgregarCarteraRecaudo" 
+    	android:layout_alignBottom="@+id/btnAgregarCarteraRecaudo" 
+    	android:layout_alignParentLeft="true">
+    </EditText>
+    	
+    <Button
+    	android:text="Agregar"
+    	android:id="@+id/btnAgregarCarteraRecaudo"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/lblNumeroRecibo" 
+    	android:drawableLeft="@drawable/add"    	
+    	android:drawablePadding="10sp"
+    	android:nextFocusDown="@+id/btnTerminarCartera"
+    	android:layout_toRightOf="@+id/txtNumeroReciboRecaudo"
+    	android:onClick="OnClickAgregarCarteraRecaudo">
+    </Button>
+    
+    <!--Button
+    	android:id="@+id/btnBuscarOpcionesPedido"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/lblNumeroRecibo" 
+    	android:drawableLeft="@drawable/busqueda"    	
+    	android:nextFocusDown="@+id/btnTerminarCartera"
+    	android:layout_toRightOf="@+id/btnAgregarCarteraRecaudo"
+    	android:onClick="OnClickOpcionesPedido">
+    </Button-->
+    
+    <TableLayout 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" 
+	    	android:id="@+id/tableLayoutOpciones" 
+	    	android:layout_below="@id/btnAgregarCarteraRecaudo"
+	    	android:layout_marginBottom="12dp"
+	    	android:layout_centerHorizontal="true"
+	    	android:paddingTop="4dp">
+	    	
+	        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+	        
+			    <Button 
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="wrap_content" 
+			    	android:text="Continuar" 
+			    	android:onClick="OnClickContinuarCartera" 
+			    	android:drawableLeft="@drawable/sig" 
+			    	android:id="@+id/btnTerminarCartera" 
+			    	android:drawablePadding="10sp" 
+			    	android:nextFocusUp="@+id/txtNumeroReciboRecaudo">
+			    </Button>
+			    
+			    <Button
+			    	android:text="Cancelar"
+			    	android:id="@+id/btnCancelarPedido"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:drawableLeft="@drawable/cancel"    	
+			    	android:drawablePadding="10sp"
+			    	android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+			    	android:onClick="OnClickCancelarCartera">
+			    </Button>
+			    
+	        </TableRow>
+	    </TableLayout>
+	    
+	 <TextView
+    	android:text="Total: $0"
+    	android:id="@+id/lblValorRecaudado"
+    	android:textColor="#000000" 
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/tableLayoutOpciones"
+    	android:layout_height="wrap_content"/>
+    	
+    <TextView
+    	android:text="Otros Descuentos: $0"
+    	android:id="@+id/lblOtrosDescuentos"
+    	android:textColor="#000000" 
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/lblValorRecaudado"
+    	android:layout_height="wrap_content"/>
+	    
+	 <ListView 
+	 	android:id="@+id/listaCarteraRecaudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblOtrosDescuentos"
+        android:paddingTop="5dp" />
+    
+</RelativeLayout>

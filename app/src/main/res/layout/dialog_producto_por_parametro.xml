@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:cacheColorHint="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/imageHeaderTeamAutoventa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_celuweb" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPedidoAutoventa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageHeaderTeamAutoventa"
+        android:background="#FFFFFF" >
+
+        <ListView
+            android:id="@+id/listViewProductosPosibles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>

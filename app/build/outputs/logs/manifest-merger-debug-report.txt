@@ -1,0 +1,451 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/486f47ffab0689613db82b73b83ff308/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/255866988e09fb4db5c8b1d793f0b7aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/186d48332e519815d2783eca26a06047/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/d9a40b3ae8bdf948effae61cdf57a6d3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/27c110ca971a3c302ecf689b0bf3a226/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/104d8e7acc624ffcc4b307080b93d079/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/2cbe1f7d9d788ddb685fe9be8a9f611d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+	package
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:3:11-47
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:1-186:12
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:4:11-41
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:8:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:11:5-89
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:11:22-86
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:12:5-76
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:12:22-73
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:13:22-63
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:14:22-65
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:15:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:16:5-74
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:16:22-71
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:17:22-65
+application
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:19:5-185:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:22:9-41
+	android:icon
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:21:9-38
+	android:usesCleartextTraffic
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:20:9-44
+activity#co.com.panificadoracountry.MainActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:23:9-31:20
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:26:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:25:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:29:27-74
+activity#co.com.panificadoracountry.FormPrincipalActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:32:9-35:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:34:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:33:13-50
+activity#co.com.panificadoracountry.FormRuteroActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:36:9-39:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:39:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:38:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:37:13-47
+activity#co.com.panificadoracountry.FormMenuEstadistica
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:40:9-43:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:43:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:42:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:41:13-48
+activity#co.com.panificadoracountry.FormInfoClienteActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:44:9-47:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:47:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:46:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:45:13-52
+activity#co.com.panificadoracountry.FormPedidosAutoventa
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:48:9-52:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:52:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:51:13-45
+	android:configChanges
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:50:13-63
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:49:13-49
+activity#co.com.panificadoracountry.FormConfigPrinter
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:53:9-56:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:56:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:55:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:54:13-46
+activity#co.com.panificadoracountry.FormPrinters
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:57:9-60:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:60:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:59:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:58:13-41
+activity#co.com.panificadoracountry.FormPrinters2
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:61:9-64:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:64:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:63:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:62:13-42
+activity#co.com.panificadoracountry.FormNoCompraActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:65:9-68:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:68:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:67:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:66:13-49
+activity#co.com.panificadoracountry.FormBuscarClienteActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:69:9-72:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:72:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:71:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:70:13-54
+activity#co.com.panificadoracountry.FormEstadisticasActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:73:9-76:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:76:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:75:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:74:13-53
+activity#co.com.panificadoracountry.FormEstadisticaRecorrido
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:77:9-80:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:80:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:79:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:78:13-53
+activity#co.com.panificadoracountry.FormEstadisticaPedidos
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:81:9-84:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:84:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:83:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:82:13-51
+activity#co.com.panificadoracountry.FormEstadisticasNoCompra
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:85:9-88:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:88:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:87:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:86:13-53
+activity#co.com.panificadoracountry.FormPedidosInformacion
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:89:9-92:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:92:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:91:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:90:13-51
+activity#co.com.panificadoracountry.FormRecaudoInformacion
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:93:9-96:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:96:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:95:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:94:13-51
+activity#co.com.panificadoracountry.FormDepositoInformacion
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:97:9-100:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:100:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:99:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:98:13-52
+activity#co.com.panificadoracountry.FormRecaudoFacturasActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:101:9-104:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:104:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:103:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:102:13-56
+activity#co.com.panificadoracountry.FormRecaudoFacturasDetailActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:105:9-108:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:108:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:107:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:106:13-62
+activity#co.com.panificadoracountry.FormBuscarProducto
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:109:9-112:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:112:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:111:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:110:13-47
+activity#co.com.panificadoracountry.FormCambiosAutoventa
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:113:9-116:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:116:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:115:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:114:13-49
+activity#co.com.panificadoracountry.FormPedidosPreventa
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:117:9-121:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:121:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:120:13-45
+	android:configChanges
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:119:13-63
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:118:13-48
+activity#co.com.panificadoracountry.FormCambiosPreventa
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:122:9-125:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:125:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:124:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:123:13-48
+activity#co.com.panificadoracountry.FormInformeVentas
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:126:9-129:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:129:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:128:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:127:13-46
+activity#co.com.panificadoracountry.FormInformeInventario
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:130:9-133:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:133:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:132:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:131:13-50
+activity#co.com.panificadoracountry.FormClienteNuevoActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:134:9-137:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:137:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:136:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:135:13-53
+activity#co.com.panificadoracountry.FormEditarClienteActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:138:9-141:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:141:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:140:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:139:13-54
+activity#co.com.panificadoracountry.FormCarteraInformacion
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:142:9-145:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:145:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:144:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:143:13-51
+activity#co.com.panificadoracountry.FormConsultarPreciosActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:146:9-149:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:149:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:148:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:147:13-57
+activity#co.com.panificadoracountry.FormKardex
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:150:9-153:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:153:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:152:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:151:13-39
+activity#co.com.panificadoracountry.FormKardexDetallado
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:154:9-157:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:157:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:156:13-45
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:155:13-48
+activity#co.com.panificadoracountry.FormDescargueInventario
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:158:9-161:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:161:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:160:13-69
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:159:13-52
+activity#co.com.panificadoracountry.FormCargueInventarioSugerido
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:162:9-164:86
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:164:13-83
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:163:13-57
+activity#co.com.panificadoracountry.FormDepositoActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:165:9-168:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:168:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:167:13-37
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:166:13-49
+activity#co.com.panificadoracountry.FormDevolucionesRealizadas
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:169:9-172:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:172:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:171:13-56
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:170:13-55
+activity#co.com.panificadoracountry.FormCuadreDeCajaActivity
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:173:9-176:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:176:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:175:13-43
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:174:13-53
+activity#co.com.panificadoracountry.FormConteoFisicoInventario
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:177:9-180:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:180:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:179:13-51
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:178:13-55
+activity#co.com.panificadoracountry.FormCuadreDeCajaActivity2
+ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:181:9-184:52
+	android:screenOrientation
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:184:13-49
+	android:label
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:183:13-57
+	android:name
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml:182:13-54
+uses-sdk
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/486f47ffab0689613db82b73b83ff308/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/486f47ffab0689613db82b73b83ff308/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/255866988e09fb4db5c8b1d793f0b7aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/255866988e09fb4db5c8b1d793f0b7aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/186d48332e519815d2783eca26a06047/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/186d48332e519815d2783eca26a06047/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/d9a40b3ae8bdf948effae61cdf57a6d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/d9a40b3ae8bdf948effae61cdf57a6d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/27c110ca971a3c302ecf689b0bf3a226/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/27c110ca971a3c302ecf689b0bf3a226/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/104d8e7acc624ffcc4b307080b93d079/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/104d8e7acc624ffcc4b307080b93d079/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/2cbe1f7d9d788ddb685fe9be8a9f611d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/2cbe1f7d9d788ddb685fe9be8a9f611d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/src/main/AndroidManifest.xml
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/ju4ng1r4l/.gradle/caches/transforms-2/files-2.1/95c2d8db99b35dfbe5dcbce1c8c2d344/AndroidManifest.xml:26:13-58

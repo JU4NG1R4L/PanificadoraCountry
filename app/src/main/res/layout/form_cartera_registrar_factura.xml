@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:gravity="top" >
+
+    <TableLayout
+        android:id="@+id/tblLayoutInfoRecuado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_trans" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Documento         "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDocRegistroRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha Doc         "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblFechaRegistroRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Vencimiento       "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblVencimientoRegistroRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dias Vencidos     "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDiasVencRegistroRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Dias Venc Pronto P."
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDiasVencProntoPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000" />
+        </TableRow>
+        
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor Factura        "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblValorRegistroRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000" 
+                android:textStyle="bold"
+                />
+        </TableRow>
+        
+        
+           <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Pago"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTipoPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue" 
+                android:textStyle="bold"
+                />
+        </TableRow>
+        
+        
+        
+        
+    </TableLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPagos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tblLayoutInfoRecuado"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+         >
+
+        <RadioButton
+            android:id="@+id/radioPagoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickPagoTotal"
+            android:text="Pago Total"
+            android:textColor="@color/Negro" />
+
+        <RadioButton
+            android:id="@+id/radioPagoParcial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="OnClickPagoParcial"
+            android:text="Pago Parcial"
+             android:textColor="@color/Negro"/>
+    </RadioGroup>
+
+    <TableLayout
+        android:id="@+id/tblLayoutValorARecaudar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupPagos"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recaudar: "
+                 android:textColor="@color/Negro"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorARecaudar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:hint="0"
+                android:inputType="number"
+                android:clickable="false" 
+                android:cursorVisible="false" 
+                android:focusable="false" 
+                android:focusableInTouchMode="false"
+                
+                 />
+        </TableRow>
+        
+        
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc: "
+                 android:textColor="@color/Negro"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorDesc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:hint="0"
+                android:inputType="number" />
+        </TableRow>
+        
+         
+         
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rete: "
+                 android:textColor="@color/Negro"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorRete"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:hint="0"
+                android:inputType="number" />
+        </TableRow>
+        
+          
+             <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros: "
+                 android:textColor="@color/Negro"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorOtros"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:hint="0"
+                android:inputType="number" />
+        </TableRow>
+          
+        
+                <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                 android:textColor="@color/Negro"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorTotalFactura"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:hint="0"
+                android:inputType="number" 
+                android:clickable="false" 
+                android:cursorVisible="false" 
+                android:focusable="false" 
+                android:focusableInTouchMode="false"
+                
+                />
+        </TableRow>
+             
+             
+        
+          <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+             >
+        
+              
+                <CheckBox
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:id="@+id/checkProntoPago"
+	            android:checked="false"
+	            android:text="Pronto Pag"
+	            android:textColor="#000000"
+	            android:layout_gravity="right"
+	            android:onClick="onClickCheckProntoPago"
+	            />
+ 
+                  
+               <EditText
+                android:id="@+id/txtProntoPago"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text"
+                android:hint="0"
+                android:inputType="number"
+                android:clickable="false"
+	            android:cursorVisible="false" 
+	            android:focusable="false" 
+	            android:focusableInTouchMode="false"
+                 />
+          
+              
+        </TableRow>
+        
+        
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tblLayoutMotivoAbono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblLayoutValorARecaudar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo Pago Parcial"
+                android:textColor="@color/Negro"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/cbMotivoPagoParcial"
+                android:layout_height="wrap_content"
+                
+                android:prompt="@string/prompt_seleccione" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/txtObservacionRegistroRecaudo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tblLayoutMotivoAbono"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text"
+        android:hint="Observacion"
+        android:visibility="gone"
+         />
+
+    <TableLayout
+        android:id="@+id/tableLayoutOpcionesFormasPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtObservacionRegistroRecaudo"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnAceptarRegisrarRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10sp"
+                android:onClick="OnClickAceptarRegisrarRecaudo"
+                android:text="Aceptar" />
+
+            <Button
+                android:id="@+id/btnCancelarRegistrarRecaudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/cancel"
+                android:drawablePadding="10sp"
+                android:onClick="OnClickCancelarRegisrarRecaudo"
+                android:text="Cancelar" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

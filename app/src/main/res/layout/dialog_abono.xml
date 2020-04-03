@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/lblDescProducto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2E65AD"
+        android:textSize="13dp"
+        android:textStyle="italic" />
+
+    <!-- 
+    <TextView
+        android:id="@+id/lblPrecio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+        
+         -->
+
+    <TextView
+        android:id="@+id/lblInventario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+    
+    
+    <RadioGroup
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+      
+        
+         >
+        
+        
+        <RadioButton
+            
+                    android:id="@+id/cbTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:checked="true"
+            
+             />
+        
+        
+          <RadioButton
+            
+                    android:id="@+id/cbAbono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abono"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+            
+             />
+        
+        
+        
+    </RadioGroup>
+    
+    
+
+    <TableLayout
+        android:id="@+id/tblLayoutOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_gravity="center_horizontal"
+         >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center_horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/lblCantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor "
+                        android:textColor="#000000"
+                        android:textSize="13dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/txtCantidad"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/editbox_background"
+                        android:inputType="numberDecimal"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false"
+                         >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tblLayoutBotonesPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnAceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10sp"
+                android:text="Continuar" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cancel"
+                android:drawablePadding="10sp"
+                android:text="Cancelar"
+                android:layout_marginLeft="20dp"
+                 >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

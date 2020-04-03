@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.com.panificadoracountry"
+    android:installLocation="auto"
+    android:versionCode="187"
+    android:versionName="1.8.7" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="co.com.panificadoracountry.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.com.panificadoracountry.FormPrincipalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormRuteroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormMenuEstadistica"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormInfoClienteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormPedidosAutoventa"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormConfigPrinter"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormPrinters"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormPrinters2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormNoCompraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormBuscarClienteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormEstadisticasActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormEstadisticaRecorrido"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormEstadisticaPedidos"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormEstadisticasNoCompra"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormPedidosInformacion"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormRecaudoInformacion"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormDepositoInformacion"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormRecaudoFacturasActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormRecaudoFacturasDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormBuscarProducto"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormCambiosAutoventa"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormPedidosPreventa"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormCambiosPreventa"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormInformeVentas"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormInformeInventario"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormClienteNuevoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormEditarClienteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormCarteraInformacion"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormConsultarPreciosActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormKardex"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormKardexDetallado"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormDescargueInventario"
+            android:label="@string/titulo_form_descargue_inventario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormCargueInventarioSugerido"
+            android:label="@string/title_activity_form_cargue_inventario_sugerido" />
+        <activity
+            android:name="co.com.panificadoracountry.FormDepositoActivity"
+            android:label="Deposito"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormDevolucionesRealizadas"
+            android:label="@string/titulo_form_cambios"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormCuadreDeCajaActivity"
+            android:label="Cuadre de Caja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormConteoFisicoInventario"
+            android:label="Liquidacion Inventario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="co.com.panificadoracountry.FormCuadreDeCajaActivity2"
+            android:label="Termina Dia - Cuadre de Caja"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

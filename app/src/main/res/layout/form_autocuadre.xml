@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:paddingTop="5dp" >
+
+                    
+                        <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Ventas:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtVentas"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:maxLength="20"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false" 
+                            android:gravity="right"
+                            />
+                            
+                    </TableRow>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Ventas Credito:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtCredito"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:maxLength="40"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false"
+                            android:gravity="right"
+                             />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Ventas Contado:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtContado"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="text"
+                            android:singleLine="true" 
+                            android:maxLength="40"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false"
+                            android:gravity="right"
+                            />
+                    </TableRow>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Devoluciones:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtDevoluciones"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:maxLength="20"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false"
+                            android:gravity="right"
+                             />
+                            
+                    </TableRow>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Devoluciones Credito:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtDevolucionesCredito"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:maxLength="40"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false"
+                            android:gravity="right"
+                             />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Devoluciones Contado:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtDevolucionesContado"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="text"
+                            android:singleLine="true" 
+                            android:maxLength="40"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false"
+                            android:gravity="right"
+                            />
+                    </TableRow>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Cartera:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtCartera"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="2"
+                            android:background="@android:drawable/editbox_background"
+                            android:inputType="text"
+                            android:singleLine="true" 
+                            android:maxLength="38"
+                            android:clickable="false" 
+                            android:cursorVisible="false" 
+                            android:focusable="false" 
+                            android:focusableInTouchMode="false"
+                            android:gravity="right"
+                            
+                            />
+                    </TableRow>
+                    
+                    
+                    
+                    
+                    
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Gastos:"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txtGastos"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="2"
+                                android:background="@android:drawable/editbox_background"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:maxLength="20"
+                                android:clickable="false" 
+                                android:cursorVisible="false" 
+                                android:focusable="false" 
+                                android:focusableInTouchMode="false"
+                                android:gravity="right"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Total:"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txtTotal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="2"
+                                android:background="@android:drawable/editbox_background"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:maxLength="50"
+                                android:clickable="false" 
+                                android:cursorVisible="false" 
+                                android:focusable="false" 
+                                android:focusableInTouchMode="false"
+                                android:gravity="right"
+                                 />
+                        </TableRow>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       
+                        android:paddingTop="5dp" >
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                           
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       
+                        android:paddingTop="5dp" >
+
+                        
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        </TableRow>
+
+                       
+                    </TableLayout>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/status_bar"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+            
+              <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/op_imprimir_auto_caudre"
+                android:onClick="OnClickImprimir"
+                android:text="Imprimir"
+                android:textStyle="bold" >
+               </Button>
+
+            <!-- <Button
+                android:id="@+id/btnGuardarCN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/check"
+                android:onClick="OnClickGuardarCliente"
+                android:text="@string/guardar"
+                android:textStyle="bold" >
+            </Button>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/op_regresar"
+                android:onClick="OnClickCancelarAutoCuadre"
+                android:text="Atras"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

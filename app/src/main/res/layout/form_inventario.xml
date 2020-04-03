@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/linearRecibo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <Button
+            android:id="@+id/btnAgregarInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/adicionar_inventario"
+            android:nextFocusDown="@+id/btnTerminarCartera"
+            android:onClick="OnClickAgregarInventario"
+            android:text="Agregar " />
+
+        <Button
+            android:id="@+id/btnCambiosInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/cambios_inventario"
+            android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+            android:onClick="OnClickCambiosInventario"
+            android:text="Cambios" />
+
+        <Button
+            android:id="@+id/btnNuevoInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/nuevo_inventario"
+            android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+            android:onClick="OnClickNuevoInventario"
+            android:text="Nuevo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearRecibo2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearRecibo"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:baselineAligned="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <Button
+            android:id="@+id/btnRecargarInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/recargar_inventario"
+            android:nextFocusDown="@+id/btnTerminarCartera"
+            android:onClick="OnClickRecargarInventario"
+            android:text="Recargar" />
+
+        <Button
+            android:id="@+id/btnImprimirInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/imprimir_inventario"
+            android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+            android:onClick="OnClickImprimirInvetario"
+            android:text="Imprimir" />
+
+        <Button
+            android:id="@+id/btnSalirInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/salir_inventario"
+            android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+            android:onClick="OnClickSalir"
+            android:text=" Salir " />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearRecibo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"></TableLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayoutOpciones">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollDetalleDeInventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:background="#FFFFFF">
+	 
+	<CheckBox
+		android:id="@+id/checkListaCartera" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true">
+	</CheckBox>
+	
+	<TextView 
+		android:textStyle="bold" 
+		android:textSize="13dp"
+		android:id="@+id/lblTitulo" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:textColor="#2E65AD"
+		android:layout_toRightOf="@+id/checkListaCartera">
+	</TextView>
+	
+	<TextView
+		android:id="@+id/lblSubTitulo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textStyle="normal"
+	    android:textSize="12dp" 
+	    android:textColor="#000000"
+	    android:layout_below="@+id/lblTitulo"
+	    android:layout_toRightOf="@+id/checkListaCartera"/>
+	    
+ </RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewTituloDispositivosEmparejados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#666"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="@string/titulo_dispositivos_emparejados"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/dispositivos_emparejados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" />
+
+    <TextView
+        android:id="@+id/textViewDispositivosEncontrados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#666"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="@string/titulo_dispositivos_encontrados"
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/listViewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:cacheColorHint="#FFFFFF"
+        android:dividerHeight="1dip"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="false" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:text="No hay Impresoras"
+        android:textColor="#9C7D0000" />
+
+</LinearLayout>

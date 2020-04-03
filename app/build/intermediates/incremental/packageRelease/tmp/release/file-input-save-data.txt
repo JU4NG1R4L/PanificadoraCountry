@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Apr 03 14:18:33 COT 2020
+0.baseType=DIRECTORY
+0.base=/Users/ju4ng1r4l/AndroidStudioProjects/CELUWEB/PanificadoraCountry/app/build/intermediates/dex/release/mergeDexRelease/out
+0.path=classes.dex
+0.set=DEX
+count=1

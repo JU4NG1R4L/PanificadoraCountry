@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_"
+            android:baselineAligned="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/codigo_producto"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/txtCodigoProducto"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@android:drawable/editbox_background"
+                                android:inputType="number"
+                                android:maxLength="20" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnAceptarOpcionesPedido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/Transparente"
+                            android:drawableLeft="@drawable/aceptar"
+                            android:drawablePadding="4dp"
+                            android:nextFocusDown="@+id/btnTerminarPedido"
+                            android:onClick="OnClickOpcionesPedido"
+                            android:text="@string/ok" />
+
+                        <Button
+                            android:id="@+id/btnBuscarProductos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/Transparente"
+                            android:drawableLeft="@drawable/op_find"
+                            android:nextFocusDown="@+id/btnUltimoPedido"
+                            android:onClick="OnClickBuscarProducto" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRecibo2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblTitulo"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <co.com.UI.TransparentPanel
+                        android:id="@+id/panelInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp" >
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/total_items"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblTotalItemsRemision"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    style="?android:attr/listSeparatorTextViewStyle"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    style="?android:attr/listSeparatorTextViewStyle"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    style="?android:attr/listSeparatorTextViewStyle"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="5dp"
+                                    android:textColor="#000000" />
+                            </TableRow>
+                        </TableLayout>
+                    </co.com.UI.TransparentPanel>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listaProdRemision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:onClick="OnClickTerminarPedido"
+                android:padding="0dp"
+                android:src="@drawable/op_terminar2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:onClick="OnClickCancelarPedido"
+                android:padding="0dp"
+                android:src="@drawable/op_cancelar2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

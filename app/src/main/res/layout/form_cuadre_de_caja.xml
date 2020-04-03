@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+     >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp" >
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollInventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <co.com.panificadoracountry.UnderlineTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="Ventas"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" 
+                      
+                            />
+
+                        <TableLayout
+                            android:id="@+id/tblLayoutFormPrincipal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_table" >
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Venta: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalVenta"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Venta En Clientes Credito: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalVentaClientesCredito"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Venta En Clientes Contado: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalVentaClientesContado"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total a Entregar: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalSaldosDepositados"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+                        </TableLayout>
+
+                        <co.com.panificadoracountry.UnderlineTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:text="Detalle Recaudos"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" 
+                            
+                            />
+
+                        <TableLayout
+                            android:id="@+id/tblLayoutFormPrincipal1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_table" >
+							
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Recaudo Efectivo Total: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalRecaudoEfectivoHistorico"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+                            
+                            
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Recaudo Efectivo Pend: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalRecaudoEfectivo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Recaudo Cheque: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalRecaudoCheque"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Recaudo Cheque PostF: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalRecaudoChequePost"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Recaudo Transferencia: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalRecaudoTransferencia"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Recaudo: "
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lblTotalRecaudo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:paddingLeft="3dp"
+                                    android:text="@string/cero"
+                                    android:textColor="#000000" >
+                                </TextView>
+                            </TableRow>
+                        </TableLayout>
+                        
+                        
+                        
+                         <TextView
+                            android:id="@+id/txComplemento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="bold" 
+                            
+                            />
+                        
+                        
+                        
+                        
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnImprimirInventario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/op_printer"
+                android:onClick="onClickImprimir"
+                android:text="Imprimir"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

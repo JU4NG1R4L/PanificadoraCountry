@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Panificadora Country</string>
+    <string name="prompt_dia_ruta">Seleccione Dia Ruta</string>
+    <string name="prompt_op_busqueda">Seleccione</string>
+    <string name="prompt_ciudad_rutero">Seleccione la Ciudad</string>
+    <string name="prompt_empresas">EMPRESAS</string>
+    <string name="prompt_motivo_cambio">Seleccione el Motivo</string>
+    <string name="prompt_descuento_cartera">Seleccione</string>
+    <string name="prompt_formas_de_pago">Seleccione</string>
+    <string name="prompt_seleccione">Seleccione</string>
+    <string name="prompt_dia">Seleccione el Dia</string>
+    <string name="prompt_banco">Seleccione el Banco</string>
+    <string name="prompt_semana">Seleccione la Semana</string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sabado</string>
+    <string name="domingo">Domingo</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cancelar_pedido">Cancelar\nPedido</string>
+    <string name="ingrese_cantidad">Ingrese cantidad</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="prompt_categoria">Seleccione la Categoria</string>
+    <string name="prompt_op_linea">Seleccione la Linea</string>
+    <string name="buscar">Buscar</string>
+    <string name="cero">0</string>
+    <string name="pesos">$</string>
+    <string name="total_items">Total Items</string>
+    <string name="codigo_producto">Codigo Producto</string>
+    <string name="ok">OK</string>
+    <string name="nombre">Nombre:</string>
+    <string name="descuento">Descuento</string>
+    <string name="total_recaudo">Total Recaudo:</string>
+    <string name="total_formas_pago">Total Formas-Pago:</string>
+    <string name="diferencia">Diferencia:</string>
+    <string name="terminar">Terminar</string>
+    <string name="agregar">Agregar</string>
+    <string name="tomar_foto">Fomar Foto</string>
+    <string name="eliminar_foto">Eliminar Foto</string>
+    <string name="foto_preview">Preview</string>
+    <string name="img_sup">Imagen Superior</string>
+    <string name="fiado">Fiado</string>
+    <string name="login">Login</string>
+    <string name="logo">Logo</string>
+    <string name="usuario">Usuario:</string>
+    <string name="clave">Clave:</string>
+    <string name="salir">"Salir "</string>
+    <string name="rutero">Rutero</string>
+    <string name="buscar_cliente">Buscar Cliente</string>
+    <string name="estadisticas">Estadisticas</string>
+    <string name="cliente_nuevo">Cliente Nuevo</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="ultimo_inicio_dia">Ultimo Inicio Dia:</string>
+    <string name="enviar_info">Enviar Info.</string>
+    <string name="efectividad">Efectividad</string>
+    <string name="iniciar_dia">Iniciar Dia</string>
+    <string name="terminar_dia">Terminar Dia</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="inventario">Inventario</string>
+    <string name="informe_inventario">Informe Inventario</string>
+    <string name="fiados">Fiados</string>
+    <string name="cuadre_caja">Cuadre Caja</string>
+    <string name="regresar">Regresar</string>
+    <string name="razon_social">Razon Social:</string>
+    <string name="nit">Nit:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="categoria">Categoria:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="barrio">Barrio:</string>
+    <string name="orden_visita">Orden Visita:</string>
+    <string name="ruta">Ruta:</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="cheque">Cheque</string>
+    <string name="porcentaje">0.0%</string>
+    <string name="valor">Valor:</string>
+    <string name="nro_cheque">Nro Cheque:</string>
+    <string name="nro_cuenta">"Nro Cuenta: "</string>
+    <string name="banco">"Banco: "</string>
+    <string name="banco_">"Banco"</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="total">"Total: "</string>
+    <string name="cliente">"Cliente: "</string>
+    <string name="color">Color</string>
+    <string name="estado">Estado</string>
+    <string name="rojo">ImgRojo</string>
+    <string name="verde">ImgVerde</string>
+    <string name="azul">ImgAzul</string>
+    <string name="sin_inventario">Sin Inventario</string>
+    <string name="incluido_en_el_pedido">Incluido en el Pedido</string>
+    <string name="disponible">Disponible</string>
+    <string name="bodega">Bodega:</string>
+    <string name="actualizar">Actualizar Info.</string>
+    <string name="actualizarinv">Actualizar Inv.</string>
+    <string name="conectividad">Conectividad</string>
+    <string name="codigoParametro">Codigo/\nParametro:</string>
+    <string name="defaultCero">0</string>
+    <string name="title_activity_form_editar_cliente">Editar Cliente</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ingrese_parte_codigo">Ingrese Parte\nDel Codigo:</string>
+    <string name="titulo_dispositivos_emparejados"><b>Dispositivos Vinculados</b></string>
+    <string name="titulo_dispositivos_encontrados"><b>Dispositivos Encontrados</b></string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo_form_descargue_inventario">Descargue Inventario</string>
+    <string name="titulo_form_cambios">Devoluciones Realizadas</string>
+    <string name="titulo_cargue_inventario_sugerido">Lista de Inventario Sugerido</string>
+
+    <!-- Usado para definir las columnas que se muestran en el el formulario de agotados y devoluciones -->
+    <string-array name="columnas_descargue_inventario">
+        <item>Cod</item>
+        <item>Producto</item>
+        <item>C.Inicial.</item>
+        <item>C.Final</item>
+    </string-array>
+
+    <string name="title_activity_form_cargue_inventario_sugerido">Cargue de Inventario Sugerido</string>
+    <string name="titulo_form_descargue_deposito">Deposito</string>
+    <string name="deposito">Deposito</string>
+    <string name="depositar">Depositar</string>
+    <string name="param_busqueda">Parametro de busqueda</string>
+    <string name="hint_busqueda_deposito">Cod cliente o Razon Social</string>
+    <string name="comp_bancario">Comprobante Bancario</string>
+    <string name="msj_error_falta_saldo">Debe seleccionar al menos un Saldo</string>
+    <string name="observacion">"Observacion"</string>
+    <string name="cantidad_cheques">"Cantidad de Cheques"</string>
+    <string name="sub_total_venta">"Sub Total Venta : "</string>
+    
+     <!-- Recaudos -->
+     <string name="r_doc">Documento: </string>
+     <string name="r_cliente">Cliente: </string>
+     <string name="r_fechaVenc">Vencimiento: </string>
+     <string name="r_diasVenc">Dias Vencidos: </string>
+     <string name="r_valor">Valor: </string>
+     
+     <string name="r_tipoPago">Tipo Pago: </string>
+  
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:gravity="top"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registro de Facturas"
+        android:textColor="@color/Blanco"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/linearRecibo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitulo"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:weightSum="10"
+         >
+
+        
+
+        <Button
+            android:id="@+id/btnAgregarDetalleGastos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/adicionar_inventario"
+            android:nextFocusDown="@+id/btnTerminarCartera"
+            android:onClick="OnClickAgregarDetalleGastoViaje"
+            android:text="Agregar" 
+            android:layout_weight="5"
+            />
+        
+        
+           <Button
+                android:id="@+id/btnCancelarDetalleGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/cancel"
+                android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+                android:onClick="OnClickCancelarCartera"
+                android:text="Salir"
+                android:layout_weight="5"
+                 />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearRecibo2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearRecibo"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+       
+         >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/add"
+            android:nextFocusUp="@+id/txtNumeroReciboRecaudo"
+            android:onClick="OnClickNuevo"
+            android:text="Nuevo"
+             />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearRecibo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp" >
+
+      
+
+        <TableRow
+            android:id="@+id/tbrinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/lblValorDetalleGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tableLayoutOpciones"
+                android:text="Total: "
+                android:textColor="@color/Blanco" />
+
+            <TextView
+                android:id="@+id/lblValorDetalleGastos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:text="$0.0"
+                android:textColor="@color/Negro" />
+        </TableRow>
+    </TableLayout>
+
+            <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tableLayoutOpciones"
+             >
+
+            <HorizontalScrollView
+                android:id="@+id/scrollDetalleDeGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </HorizontalScrollView>
+        </ScrollView>
+
+</RelativeLayout>

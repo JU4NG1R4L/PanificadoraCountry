@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_"
+    android:gravity="top"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/lblMsgActualizarInv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000" >
+    </TextView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMsgActualizarInv"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:paddingTop="5dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <Button
+                android:id="@+id/btnAceptarIniciarDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/aceptar"
+                android:drawablePadding="10dp"
+                android:text="@string/aceptar" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnCancelarIniciarDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cancel"
+                android:drawablePadding="10sp"
+                android:text="@string/cancelar" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

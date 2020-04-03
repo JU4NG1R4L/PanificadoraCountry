@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="top"
+    android:background="@drawable/background_">
+  
+   <TableLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/tableLayoutOpBusqueda"
+    	android:paddingTop="5dp">
+    	
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+        
+		    <TextView
+		    	android:text="Opciones: " 
+		    	android:textColor="#000000"
+		    	android:id="@+id/lblOpcionesBusq"		    	
+		    	android:layout_width="wrap_content"		    	
+		    	android:layout_height="wrap_content" />
+		    
+		    <Spinner 
+		    	android:id="@+id/cbOpBusquedaProduc"
+		    	android:layout_height="wrap_content" 
+		    	android:prompt="@string/prompt_op_busqueda"
+		    	android:nextFocusDown="@+id/txtOpBusquedaProduc" />			
+        </TableRow>
+    </TableLayout>
+	
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+	    android:id="@+id/tableLayoutOpLineas"
+	    android:layout_below="@id/tableLayoutOpBusqueda"
+	    android:paddingTop="5dp">
+       
+          <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:visibility="gone"  
+              
+              >
+        
+		    <TextView
+		    	android:text="Lineas: " 
+		    	android:textColor="#000000"
+		    	android:layout_width="wrap_content"		    	
+		    	android:layout_height="wrap_content" />
+		    
+		    <Spinner 
+		    	android:id="@+id/cbLinerasProduc"
+		    	android:layout_height="wrap_content" 
+		    	android:prompt="@string/prompt_categoria"
+		    	android:nextFocusDown="@+id/txtOpBusquedaProduc" />			
+        </TableRow>
+    </TableLayout>
+    
+    <TextView 
+    	android:id="@+id/lblOpBusquedaProduc"
+    	android:textColor="#000000"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:text="Ingrese Parte del Nombre:" 
+    	android:layout_below="@id/tableLayoutOpLineas">
+    </TextView>
+    
+    <Button
+    	android:text="@string/buscar"
+    	android:id="@+id/btnBusquedaProduc"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/lblOpBusquedaProduc"
+    	android:drawableLeft="@drawable/aceptar"    	
+    	android:drawablePadding="10sp"
+    	android:layout_toRightOf="@+id/txtOpBusquedaProduc"
+    	android:onClick="OnClickFormBuscarProducto"
+    	android:paddingTop="5dp" />
+    
+    <EditText 
+    	android:id="@+id/txtOpBusquedaProduc"
+    	android:textColor="#000000"
+    	android:layout_height="wrap_content" 
+    	android:layout_width="120dp" 
+    	android:inputType="text" 
+    	android:background="@android:drawable/editbox_background" 
+    	android:layout_alignBaseline="@+id/btnBusquedaProduc" 
+    	android:layout_alignBottom="@+id/btnBusquedaProduc" 
+    	android:layout_alignParentLeft="true">
+    </EditText>
+    
+    <ListView android:id="@+id/listaBusquedaProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOpBusquedaProduc"
+        android:cacheColorHint="@android:color/transparent"
+        android:paddingTop="5dp" />
+    
+</RelativeLayout>
